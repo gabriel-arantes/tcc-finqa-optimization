@@ -41,10 +41,22 @@ Important rules:
 
 
 # ── Exemplos demonstrativos (few-shot) ─────────────────────
-# Selecionados manualmente para cobrir operações representativas
-# do FinQA: subtract, divide, multi-step, porcentagem, booleano.
+# 10 exemplos selecionados manualmente para cobrir operações
+# representativas do FinQA, maximizando diversidade:
+#
+#  1. subtract      — diferença entre valores de anos consecutivos
+#  2. divide        — cálculo de proporção/percentual simples
+#  3. subtract+div  — taxa de crescimento (multi-step)
+#  4. pct_change    — variação percentual
+#  5. boolean       — comparação booleana (greater)
+#  6. add           — soma de componentes
+#  7. multiply      — multiplicação para cálculo de valor total
+#  8. average       — cálculo de média aritmética
+#  9. pct_of_total  — percentual de uma parte sobre o total
+# 10. add+divide    — soma seguida de divisão (multi-step)
 
 FEW_SHOT_EXAMPLES = [
+    # ── Demo 1: subtract ──
     {
         "context": (
             "### Relevant Text (Before Table)\n"
@@ -64,6 +76,7 @@ FEW_SHOT_EXAMPLES = [
         "program": "subtract(2309.9, 2303.0)",
         "answer": "6.9",
     },
+    # ── Demo 2: divide (proporção simples) ──
     {
         "context": (
             "### Financial Table\n"
@@ -84,6 +97,7 @@ FEW_SHOT_EXAMPLES = [
         "program": "divide(12, 261)",
         "answer": "4.6%",
     },
+    # ── Demo 3: multi-step subtract+divide (taxa de crescimento) ──
     {
         "context": (
             "### Relevant Text (Before Table)\n"
@@ -105,6 +119,7 @@ FEW_SHOT_EXAMPLES = [
         "program": "divide(subtract(2.5, 1.6), 1.6)",
         "answer": "56.25%",
     },
+    # ── Demo 4: percentage change ──
     {
         "context": (
             "### Financial Table\n"
@@ -125,6 +140,7 @@ FEW_SHOT_EXAMPLES = [
         "program": "divide(subtract(991.1, 959.2), 959.2)",
         "answer": "3.3%",
     },
+    # ── Demo 5: boolean/greater ──
     {
         "context": (
             "### Relevant Text (Before Table)\n"
@@ -149,6 +165,117 @@ FEW_SHOT_EXAMPLES = [
         ),
         "program": "greater(multiply(multiply(607, 18.13), const_1000), multiply(3.3, const_1000000))",
         "answer": "yes",
+    },
+    # ── Demo 6: add (soma de componentes) ──
+    {
+        "context": (
+            "### Relevant Text (Before Table)\n"
+            "entergy arkansas's receivables from or ( payables to ) the money pool were "
+            "as follows:\n"
+            "### Financial Table\n"
+            "                     | (in thousands)\n"
+            "--------------------------------------\n"
+            "2007 january          | ($  35643)\n"
+            "2007 february         | ($  ## )\n"
+            "net income            | $  105221\n"
+            "other comprehensive income | $  2399"
+        ),
+        "question": "what is the total of net income and other comprehensive income?",
+        "reasoning": (
+            "Step 1: Identify the relevant values.\n"
+            "  - Net income: $105,221 thousand\n"
+            "  - Other comprehensive income: $2,399 thousand\n\n"
+            "Step 2: Calculate the total.\n"
+            "  Total = 105221 + 2399 = 107620\n\n"
+            "The total of net income and other comprehensive income is $107,620 thousand."
+        ),
+        "program": "add(105221, 2399)",
+        "answer": "107620",
+    },
+    # ── Demo 7: multiply (cálculo de valor) ──
+    {
+        "context": (
+            "### Relevant Text (Before Table)\n"
+            "the company repurchased 4.2 million shares at an average price of $35.50 "
+            "per share during the fiscal year 2016."
+        ),
+        "question": "what was the total cost of share repurchases in 2016, in millions?",
+        "reasoning": (
+            "Step 1: Identify the relevant values.\n"
+            "  - Shares repurchased: 4.2 million\n"
+            "  - Average price: $35.50 per share\n\n"
+            "Step 2: Calculate the total cost.\n"
+            "  Total cost = 4.2 × 35.50 = 149.1 million\n\n"
+            "The total cost of share repurchases was $149.1 million."
+        ),
+        "program": "multiply(4.2, 35.50)",
+        "answer": "149.1",
+    },
+    # ── Demo 8: average (média aritmética) ──
+    {
+        "context": (
+            "### Financial Table\n"
+            "year | operating expenses (millions)\n"
+            "-------------------------------------\n"
+            "2014 | 580\n"
+            "2015 | 612\n"
+            "2016 | 647"
+        ),
+        "question": "what was the average annual operating expenses from 2014 to 2016?",
+        "reasoning": (
+            "Step 1: Identify the values for each year.\n"
+            "  - 2014: $580 million\n"
+            "  - 2015: $612 million\n"
+            "  - 2016: $647 million\n\n"
+            "Step 2: Calculate the average.\n"
+            "  Average = (580 + 612 + 647) / 3 = 1839 / 3 = 613\n\n"
+            "The average annual operating expenses from 2014 to 2016 was $613 million."
+        ),
+        "program": "divide(add(add(580, 612), 647), const_3)",
+        "answer": "613",
+    },
+    # ── Demo 9: pct_of_total (percentual de uma parte sobre total) ──
+    {
+        "context": (
+            "### Financial Table\n"
+            "segment               | net sales 2015 (millions)\n"
+            "-----------------------------------------------\n"
+            "consumer products      | 1250\n"
+            "industrial solutions   | 890\n"
+            "total                  | 2140"
+        ),
+        "question": "what percentage of total net sales was from consumer products in 2015?",
+        "reasoning": (
+            "Step 1: Identify the relevant values.\n"
+            "  - Consumer products sales: $1,250 million\n"
+            "  - Total net sales: $2,140 million\n\n"
+            "Step 2: Calculate the percentage.\n"
+            "  Percentage = 1250 / 2140 = 0.5841 = 58.41%\n\n"
+            "Consumer products represented 58.41% of total net sales."
+        ),
+        "program": "multiply(divide(1250, 2140), const_100)",
+        "answer": "58.41%",
+    },
+    # ── Demo 10: multi-step add+divide (soma seguida de divisão) ──
+    {
+        "context": (
+            "### Financial Table\n"
+            "                    | 2018 (thousands)\n"
+            "--------------------------------------\n"
+            "short-term debt      | 450\n"
+            "long-term debt       | 1320\n"
+            "total equity         | 2850"
+        ),
+        "question": "what was the debt-to-equity ratio in 2018?",
+        "reasoning": (
+            "Step 1: Calculate total debt.\n"
+            "  Total debt = short-term + long-term = 450 + 1320 = 1770\n\n"
+            "Step 2: Calculate the debt-to-equity ratio.\n"
+            "  Debt-to-equity = 1770 / 2850 = 0.62\n\n"
+            "The debt-to-equity ratio in 2018 was 0.62."
+        ),
+        "program": "divide(add(450, 1320), 2850)",
+        "answer": "0.62",
     },
 ]
 
@@ -239,7 +366,6 @@ def extract_program(response_text: str) -> str:
     Procura padrões como operações aninhadas:
       subtract(X, Y), divide(X, Y), etc.
     """
-    # Procurar padrões de programa DSL
     ops = r"(?:add|subtract|multiply|divide|greater|exp|table_sum|table_average|table_max|table_min)"
     pattern = rf"({ops}\(.+\))"
     match = re.search(pattern, response_text, re.IGNORECASE)

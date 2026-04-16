@@ -96,7 +96,6 @@ def run_single_optimizer(
     # ── Inspecionar prompt otimizado ──
     print(f"\n[2/3] Inspecionando prompt otimizado...")
     try:
-        # DSPy armazena demos e instruções nos predictors
         for pred_name, predictor in optimized.named_predictors():
             print(f"\n  Predictor: {pred_name}")
             if hasattr(predictor, "demos") and predictor.demos:
@@ -121,7 +120,6 @@ def run_single_optimizer(
         verbose=True,
     )
 
-    # Adicionar tempo de otimização ao relatório
     report_summary = report.summary()
     report_summary["optimization_time_seconds"] = round(optimization_time, 1)
 
@@ -162,9 +160,9 @@ def main():
     )
     parser.add_argument("--seed", type=int, default=42)
 
-    # Hiperparâmetros dos otimizadores
-    parser.add_argument("--max_bootstrapped_demos", type=int, default=5)
-    parser.add_argument("--max_labeled_demos", type=int, default=5)
+    # Hiperparâmetros dos otimizadores — 10 demos para paridade com baseline
+    parser.add_argument("--max_bootstrapped_demos", type=int, default=10)
+    parser.add_argument("--max_labeled_demos", type=int, default=10)
     parser.add_argument("--max_rounds", type=int, default=3)
     parser.add_argument(
         "--auto_level", type=str, default="medium",
