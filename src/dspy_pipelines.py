@@ -280,11 +280,24 @@ def evaluate_dspy_module(
         # Processar exemplo novo
         start = time.time()
         try:
+            # Rastrear tokens via histórico do LM
+            lm = dspy.settings.lm
+            hist_start = len(lm.history) if hasattr(lm, 'history') else 0
+
             pred = module(context=ex.context, question=ex.question)
             latency = time.time() - start
 
             predicted_answer = getattr(pred, "answer", "")
             predicted_reasoning = getattr(pred, "reasoning", "")
+
+            # Extrair tokens das novas entradas do histórico
+            input_tokens = 0
+            output_tokens = 0
+            if hasattr(lm, 'history'):
+                for entry in lm.history[hist_start:]:
+                    usage = entry.get('usage', {}) if isinstance(entry, dict) else {}
+                    input_tokens += usage.get('prompt_tokens', 0)
+                    output_tokens += usage.get('completion_tokens', 0)
 
             exec_acc = execution_accuracy(predicted_answer, ex.exe_ans)
 
@@ -297,8 +310,8 @@ def evaluate_dspy_module(
                 predicted_program="",
                 exec_acc=exec_acc,
                 prog_acc=False,
-                input_tokens=0,
-                output_tokens=0,
+                input_tokens=input_tokens,
+                output_tokens=output_tokens,
                 latency_seconds=latency,
                 raw_response=predicted_reasoning,
             )
