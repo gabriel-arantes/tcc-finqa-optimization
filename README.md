@@ -51,9 +51,6 @@ pip install -r requirements.txt
 # 2. Configurar API key
 cp .env.example .env
 # Editar .env com sua chave OpenAI ou Anthropic
-
-# 3. Exportar variável
-export OPENAI_API_KEY=sk-...
 ```
 
 ## Execução
