@@ -1,0 +1,12 @@
+{
+  "pipeline": "dspy_bootstrap_few_shot",
+  "split": "dev",
+  "n": 883,
+  "execution_accuracy": 71.8,
+  "program_accuracy": 0.0,
+  "total_tokens": 0,
+  "avg_input_tokens": 0.0,
+  "avg_output_tokens": 0.0,
+  "avg_latency_s": 5.68,
+  "timestamp": "20260405_182756"
+}

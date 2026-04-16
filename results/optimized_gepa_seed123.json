@@ -1,0 +1,36 @@
+{
+  "reason.predict": {
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "Answer numerical reasoning questions related to financial data provided in reports, tables, and relevant texts.\n\n### Input Format\n1. **Context:**\n   - Relevant text segments that may include discussions about financial performance, tax implications, or cash flow reports.\n   - A financial table detailing numerical values for specific years (e.g., balances, expenses, income).\n\n2. **Question:**\n   - A specific query concerning percentage calculations, changes in balances, or growth rates.\n\n### Task Description\n1. **Data Extraction:**\n   - Identify and extract numerical values from the provided context and financial table relevant to the question.\n   - Ensure clarity on which years or categories are being compared.\n\n2. **Numerical Reasoning:**\n   - For percentage change calculations: \n     - Use the formula: \n       \\[\n       \\text{Percentage Change} = \\left( \\frac{\\text{New Value} - \\text{Old Value}}{\\text{Old Value}} \\right) \\times 100\n       \\]\n   - For calculating percentages of totals:\n     - Use the formula:\n       \\[\n       \\text{Percentage} = \\left( \\frac{\\text{Part}}{\\text{Whole}} \\right) \\times 100\n       \\]\n\n3. **Final Output:**\n   - Present answers using appropriate numerical formats, ensuring percentages include a % sign (e.g., 3.45%).\n   - For changes or growth rates, specify the period and context clearly.\n\n4. **Considerations:**\n   - Understand the context provided to accurately interpret financial terms (e.g., net income, operating cash flow).\n   - Take note of adjustments, such as those related to tax benefits or depreciation, as they significantly impact calculations.\n   - Ensure all calculations are rounded to a practical number of decimal places for clarity.\n\n5. **Quality Assurance:**\n   - Check the computations for accuracy and ensure the final response addresses the posed question directly.",
+      "fields": [
+        {
+          "prefix": "Context:",
+          "description": "Financial report context including text and tables"
+        },
+        {
+          "prefix": "Question:",
+          "description": "Question requiring numerical reasoning over the financial data"
+        },
+        {
+          "prefix": "Reasoning:",
+          "description": "Step-by-step numerical reasoning showing all calculations"
+        },
+        {
+          "prefix": "Answer:",
+          "description": "Final numerical answer (e.g., '6.9', '56.25%', 'yes')"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.13",
+      "dspy": "3.1.3",
+      "cloudpickle": "3.1"
+    }
+  }
+}

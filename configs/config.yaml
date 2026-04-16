@@ -1,0 +1,74 @@
+# ============================================================
+# TCC — Otimização Automática de Prompts vs. Engenharia Manual
+# Configuração centralizada dos experimentos
+# ============================================================
+
+# --- Modelo LLM ---
+llm:
+  provider: "openai"                  # "openai" | "anthropic"
+  model: "gpt-4o-mini"               # Modelo para todos os pipelines
+  temperature: 0.0                    # Determinístico para reprodutibilidade
+  max_tokens: 1024
+  seed: 42                            # Seed do modelo (quando suportado)
+
+# --- Dataset FinQA ---
+data:
+  source: "github"                    # "github" (czyssrs/FinQA)
+  train_subset: null                  # null = usar tudo; int = subsample
+  dev_subset: null
+  test_subset: null
+  seed: 42
+
+# --- Avaliação ---
+evaluation:
+  execution_accuracy_tolerance: 1e-5  # Tolerância numérica para exe_ans
+  metrics:
+    - "execution_accuracy"            # Métrica primária (leaderboard FinQA)
+    - "program_accuracy"              # Métrica secundária (raciocínio)
+    - "token_cost"                    # Custo em tokens (input + output)
+    - "latency_seconds"              # Latência por exemplo
+
+# --- Pipeline Baseline (Engenharia de Prompts Manual) ---
+baseline:
+  num_few_shot_examples: 5            # Exemplos demonstrativos no prompt
+  use_chain_of_thought: true          # Incluir cadeia de raciocínio
+  example_selection: "manual"         # "manual" | "random"
+  manual_example_ids:                 # IDs dos exemplos selecionados manualmente
+    - 10                              # subtract simples
+    - 20                              # divide simples
+    - 50                              # subtract grande
+    - 100                             # operação com porcentagem
+    - 200                             # operação multi-step
+
+# --- Otimizadores DSPy ---
+optimizers:
+  bootstrap_few_shot:
+    max_bootstrapped_demos: 5
+    max_labeled_demos: 5
+    max_rounds: 3
+    metric: "execution_accuracy"
+
+  miprov2:
+    num_candidates: 10
+    max_bootstrapped_demos: 5
+    max_labeled_demos: 5
+    num_trials: 30
+    metric: "execution_accuracy"
+
+  gepa:
+    num_candidates: 10
+    num_iterations: 20
+    metric: "execution_accuracy"
+
+# --- Reprodutibilidade ---
+reproducibility:
+  random_seed: 42
+  num_runs: 3                         # Repetições para variância
+  save_all_predictions: true
+  save_optimized_prompts: true
+
+# --- Caminhos ---
+paths:
+  results_dir: "results"
+  prompts_dir: "prompts"
+  cache_dir: ".cache"

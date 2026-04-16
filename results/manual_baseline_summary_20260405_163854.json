@@ -1,0 +1,12 @@
+{
+  "pipeline": "manual_baseline",
+  "split": "dev",
+  "n": 883,
+  "execution_accuracy": 73.05,
+  "program_accuracy": 0.0,
+  "total_tokens": 1915231,
+  "avg_input_tokens": 2011.5,
+  "avg_output_tokens": 157.5,
+  "avg_latency_s": 3.53,
+  "timestamp": "20260405_163854"
+}
