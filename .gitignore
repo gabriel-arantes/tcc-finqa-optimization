@@ -1,3 +1,8 @@
 .venv/
 setup.sh
 results/**/.checkpoint*
+**/__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
