@@ -22,6 +22,7 @@ from typing import Optional
 import dspy
 from dspy.teleprompt import BootstrapFewShot, MIPROv2, GEPA, KNNFewShot, SIMBA
 
+from src.data_loader import FinQAExample
 from src.dspy_module import (
     FinQAModule,
     finqa_execution_accuracy,
