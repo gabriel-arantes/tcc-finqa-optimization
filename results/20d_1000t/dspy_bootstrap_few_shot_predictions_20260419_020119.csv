@@ -1,0 +1,884 @@
+example_id,question,gold_exe_ans,predicted_answer,exec_acc,prog_acc,input_tokens,output_tokens,latency_seconds
+V/2008/page_17.pdf-1,what is the average payment volume per transaction for american express?,127.4,127.4,True,False,24114,151,13.583
+C/2017/page_328.pdf-1,what was the percentage cumulative total return for the five year period ended 31-dec-2017 of citi c,0.935,93.5%,True,False,23642,254,14.455
+DVN/2007/page_58.pdf-2,what percentage of the total oil and gas mmboe comes from canada?,24.69136,24.69%,True,False,24244,212,4.533
+ETR/2011/page_341.pdf-3,in 2010 what was the net change in net revenue in millions,19.2,18.6,False,False,23869,167,4.06
+ETR/2004/page_213.pdf-2,what are the deferred fuel cost revisions as a percentage of the increase in fuel cost recovery reve,0.60306,60.2%,True,False,23933,207,9.869
+PM/2017/page_38.pdf-1,what was the change in millions of operating income from 2016 to 2017?,688.0,688,True,False,24224,153,9.953
+JPM/2008/page_85.pdf-3,what was jpmorgan chase & co's common equity tier 1 ( cet1 ) ratio in 2008?,0.10935,10.95%,True,False,24463,237,5.402
+PNC/2013/page_207.pdf-1,"at the end of 2014 , the notional value of derivatives designated as hedging instruments under gaap ",30.44323,3043.5%,True,False,24094,254,5.108
+CME/2017/page_97.pdf-5,"what was the increase in class a common stock issued and outstanding between years , in thousands?",995.0,995,True,False,24152,173,8.409
+PNC/2013/page_62.pdf-2,in millions what was total residential mortgages balance for 2013 and 2012?,3576.0,"Total residential mortgages balance for 2013: $1,356 million; for 2012: $2,220 million.",False,False,24411,251,20.013
+AAPL/2004/page_36.pdf-2,what was the gross margin decline in fiscal 2004 from 2003?,0.2,0.2%,True,False,24222,156,3.99
+PKG/2009/page_65.pdf-4,what percentage of total purchase commitments are due after 2014?,0.56197,56.2%,True,False,23957,198,4.803
+LMT/2013/page_74.pdf-4,what was the change in the weighted average common shares outstanding for diluted computations from ,-1.9,-1.9,True,False,24293,185,4.465
+STT/2011/page_83.pdf-1,in 2011 what was the amount of tax related to the unrealized losses reclassifications totaled $ 303 ,114.0,114 million,True,False,24233,164,3.687
+MRO/2007/page_149.pdf-2,"if current development costs increased in 2008 as much as in 2007 , what would the 2008 total be , i",2057.0,3308,False,False,23849,186,9.627
+AOS/2004/page_11.pdf-2,what percentage of total aggregate contractual obligations is due to purchase obligationst?,0.34011,33.98%,True,False,24534,198,4.427
+C/2010/page_223.pdf-3,in 2010 what was the percentage change of the carrying amount of loan receivable net of the allowanc,-0.52485,-52.5%,True,False,23945,326,19.542
+MSI/2006/page_61.pdf-3,what was the percent of the total long-term debt obligations that was due after 2011,0.35099,35.1%,True,False,24441,230,4.697
+ABMD/2006/page_75.pdf-1,what is the decline from current future minimum lease payments and the following years expected obli,0.19495,0,False,False,24058,237,4.339
+AMAT/2013/page_18.pdf-2,"what is the applied 2019s net sales in 2018 , ( in billions ) ?",7.22222,Data not available,False,False,24277,402,6.702
+DVN/2014/page_85.pdf-1,"what is the average amortization amount , in millions , from 2015-2019?",44.8,44.8,True,False,23698,223,6.328
+SPGI/2018/page_74.pdf-1,what was the ratio of the pension trust assets for 2017 to 2018,1.15663,1.107,False,False,24448,194,4.826
+ZBH/2003/page_58.pdf-3,what percent of inventory is ready for liquidation ( sale ) in 2003?,0.72825,72.8%,True,False,24558,217,5.445
+AMT/2005/page_105.pdf-2,what is the total value of net operating loss carryforwards?,4575515.0,4575515000,False,False,24158,190,4.608
+ETR/2015/page_131.pdf-1,what is the percent change in annual long-term debt maturities from 2016 to 2017?,2.75566,275.5%,True,False,24141,277,5.057
+PNC/2009/page_46.pdf-2,share of total securities rated bbb/baa or below changed by how many percentage point between 2008 a,-1.0,-1,True,False,24467,159,14.52
+PM/2017/page_38.pdf-3,what is the percentage increase in interest expense?,0.02581,2.58%,True,False,24215,323,6.562
+HOLX/2015/page_98.pdf-2,what is the expected growth rate in amortization expense from 2016 to 2017?,-0.03024,-3.02%,True,False,24495,267,6.683
+ETR/2017/page_114.pdf-2,what are the payments for entergy arkansas as a percentage of payments for entergy louisiana?,0.33333,33.33%,True,False,24295,201,4.127
+UNP/2008/page_77.pdf-1,"as of december 31 , 2008 what was the percent of the total accounts payable and other liabilities th",0.14336,14.36%,True,False,23974,214,4.064
+AES/2016/page_191.pdf-3,"for the period ending in 2016 , what was the average amount of settlements , in millions?",-11.33333,-11.33,True,False,24457,241,5.484
+ETFC/2007/page_126.pdf-3,what percentage of total future principal payments of corporate debt are due after 2012?,0.86847,87.0%,True,False,23852,219,4.554
+MAS/2012/page_70.pdf-1,what was the percentage change in total net goodwill between 2010 and 2011?,-0.20646,-20.65%,True,False,24390,259,5.107
+AON/2010/page_28.pdf-1,"from the data given , how many square feet have an expiry date in 2020?",778000.0,778000,True,False,24066,149,3.076
+AES/2002/page_46.pdf-4,what was the difference in dollars of the high low sale price for the common stock in the fourth qua,2.62,2.62,True,False,23791,179,4.197
+CB/2010/page_200.pdf-4,in 2010 what was the ratio of the statutory capital and surplus to the statutory net income,4.85514,4.86,True,False,24232,181,3.421
+PM/2015/page_85.pdf-1,what is the percentage change in total debt from 2014 to 2015?,-0.0339,-3.39%,True,False,25193,230,4.034
+ETFC/2014/page_26.pdf-2,what was the total return percentage for e*trade financial corporation for the five years ended 12/1,0.3781,37.81%,True,False,23489,257,9.463
+ZBH/2003/page_40.pdf-1,what was the difference in operating profit for the americas as a percentage of net sales between 20,3.8,3.8%,True,False,24567,160,3.819
+AAPL/2014/page_38.pdf-3,what was the change in amount of long term debt between 2014 and 2012?,28987.0,28987,True,False,24196,173,4.032
+ETR/2003/page_84.pdf-2,"what amount of long-term debt due in the next 36 months as of december 31 , 2003 , in millions?",1041.531,1041.53,True,False,24116,399,6.989
+LMT/2012/page_47.pdf-3,what is the growth rate in operating profit for space systems in 2011?,0.03204,3.20%,True,False,24208,225,3.833
+MAS/2018/page_35.pdf-3,what was the percentage growth in the operating profit as reported from 2017 to 2018,0.01424,1.42%,True,False,24195,227,3.558
+SYY/2019/page_9.pdf-2,what was the change in the percentage of sales to restaurants from 2018 to 2019?,0.0,0%,True,False,24181,131,2.347
+ETR/2002/page_86.pdf-3,what are the annual other sinking fund requirements as a percentage of annual long-term debt maturit,0.06354,6.35%,True,False,24059,262,5.145
+ZBH/2003/page_58.pdf-1,what percent increase did inventories receive between 2002 and 2003?,1.04852,104.85%,True,False,24488,270,4.144
+AMT/2010/page_34.pdf-2,on february 112011 what was the market capitalization,22556579533.35,22563 million,False,False,23759,190,3.179
+PM/2014/page_67.pdf-2,"what was the total of euro notes issued in 2014 , in millions of dollars approximately?",3098.0,3098,True,False,24751,165,2.865
+ETR/2002/page_24.pdf-1,what was the percent of the increase in non-utility nuclear earnings in 2002,0.57031,57.03%,True,False,23978,226,3.648
+PM/2015/page_127.pdf-4,what was the average currency translation adjustments from 2013 to 2015 in millions?,-4088.33333,-4090,True,False,24054,208,3.538
+RSG/2016/page_144.pdf-1,what was the ratio of the gallons hedged in 2017 to 2018,4.0,4:1,False,False,24078,190,3.366
+SNPS/2006/page_69.pdf-2,what percentage of the total purchase price is represented by goodwill?,0.21651,21.65%,True,False,23963,214,3.7
+GIS/2019/page_37.pdf-3,what was the percentage change of our accrued trade liabilities in 2019 compared to 2018,-16.0,-3.2%,False,False,24258,211,3.841
+JPM/2018/page_110.pdf-2,what was the net change in ending available for sale investment securities from 2017 to 2018?,28434.0,28434,True,False,24693,190,7.704
+STT/2008/page_83.pdf-2,what percent higher is the average var for foreign exchange products than that of interest rate prod,1.25,63.64%,False,False,24066,276,4.301
+AES/2016/page_185.pdf-4,what was the change in millions of total redeemable stock of subsidiaries from 2015 to 2016?,244.0,244,True,False,24358,154,3.164
+CDNS/2012/page_30.pdf-4,what is the roi of nasdaq composite from 2008 to 2009?,-0.04097,39.34%,False,False,23666,283,7.347
+AMAT/2014/page_35.pdf-1,what percentage of warehouse locations are in north america?,0.21333,21.33%,True,False,24522,188,3.401
+LMT/2006/page_90.pdf-3,"at december 31 , 2006 what was the ratio of the expected future pension benefits after 2012 compared",6.39597,6.40,True,False,24189,205,3.962
+MO/2012/page_44.pdf-2,what are the cost reduction initiatives as a percentage of the operating companies income increase?,1.66387,166.39%,True,False,24702,219,3.965
+GS/2017/page_106.pdf-4,what was change in millions for the estimated sensitivity to a one basis point increase in credit sp,1.0,1,True,False,24136,160,3.219
+EW/2016/page_79.pdf-4,what percentage of the total cash purchase price net of cash acquired was represented by ipr&d?,0.59356,59.37%,True,False,23917,224,4.385
+SLB/2012/page_44.pdf-3,by how much did the average price per share increase from 2010 to 2011?,0.25853,16.67,False,False,24375,164,3.504
+GIS/2012/page_64.pdf-2,what portion of the total notes payable comes from u.s . commercial paper?,0.78253,78.2%,True,False,24339,205,4.816
+PM/2017/page_99.pdf-1,what is the growth rate of the net earnings attributable to pmi?,-0.13377,-12.19%,False,False,23678,275,5.521
+IP/2007/page_75.pdf-1,"what percentage of december 31 , 2007 , total future minimum commitments under existing non-cancelab",0.9349,93.5%,True,False,24418,233,3.455
+GS/2017/page_143.pdf-2,what is the percentage change in net comodities from 2016 to 2017?,-0.35616,-35.62%,True,False,24987,284,10.475
+IPG/2009/page_85.pdf-2,what the percentage increase defined contribution plans for foreign countries and contribution from ,0.07491,7.48%,True,False,24299,245,4.843
+ABMD/2009/page_88.pdf-1,what are the total contingent payments relating to impella?,16750002.0,16750000,True,False,24148,163,2.812
+IP/2006/page_32.pdf-1,in 2006 what percentage of consumer packaging sales were represented by foodservice net sales?,0.1613,16.1%,True,False,24377,201,3.799
+CDNS/2018/page_31.pdf-3,what is the rate of return of an investment in nasdaq from 2017 to 2018?,-0.03643,-3.64%,True,False,23834,280,4.214
+L/2015/page_59.pdf-4,what is the percentage reduction in the loews common stock from 2013 to 2014,-0.1239,12.39%,False,False,23693,233,5.126
+ILMN/2007/page_78.pdf-4,"based on the investment in solexa on november 12 , 2006 what was the price per share in the transact",1e-05,9.70,False,False,23950,159,3.552
+ADI/2011/page_81.pdf-1,what portion of the total investment is allocated to mutual funds in 2011?,0.65078,34.9%,False,False,24063,201,3.531
+MRO/2006/page_33.pdf-1,"based on a 365 day year and the average sales price per barrel listed above , what was the total ref",40444920.0,40487520000,False,False,24413,311,5.224
+AMT/2012/page_125.pdf-2,"for the mtn deal , what was the total post closing adjustments , in millions?",1.7,1.7,True,False,23953,136,2.951
+ETR/2004/page_213.pdf-4,"what is the growth rate in net revenue in 2003 for entergy louisiana , inc.?",0.05504,5.5%,True,False,23866,278,4.932
+IP/2007/page_31.pdf-1,what percentage of industrial packaging sales where represented by european industrial packaging net,0.20972,20.95%,True,False,24367,210,4.843
+AMT/2005/page_54.pdf-2,"what portion of the adjusted consolidated cash flow for the twelve months ended december 31 , 2005 i",1.0499,104.98%,True,False,24156,320,5.126
+FBHS/2017/page_23.pdf-2,what was the percentage growth in sales of cabinets from 2016 to 2017,0.0289,2.89%,True,False,24140,283,4.973
+MSI/2009/page_65.pdf-2,what was the ratio of the segment net sales in 2008 to 2009,1.69312,1.692,True,False,24416,179,5.972
+PM/2015/page_38.pdf-1,what is the percentage change in the weighted-average discount rate for u.s . pension plans from 201,0.08861,8.86%,True,False,24395,287,4.719
+AON/2009/page_48.pdf-4,"considering the year 2009 , what is the percentage of the segment's operating income among the total",0.22556,Insufficient data to calculate the percentage.,False,False,24029,313,5.87
+CDNS/2006/page_30.pdf-1,"what was the percentage cumulative 5-year total return to shareholders of cadence design systems , i",-0.2004,-20.04%,True,False,23776,269,4.333
+ALXN/2007/page_104.pdf-2,what is the percent change in minimum annual rental payment between 2010 and 2011?,0.01266,1.27%,True,False,23819,273,4.134
+AES/2016/page_191.pdf-2,what was the percentage change in the unrecognized tax benefits from 2015 to 2016?,-0.01072,-1.07%,True,False,24388,216,4.408
+CB/2010/page_200.pdf-3,what was the average potential anti-dilutive share conversions from 2008 to 2010,1063076.5,708717,False,False,24163,225,4.073
+IP/2012/page_93.pdf-1,what was the change in rent expenses between 2011 and 2012?,26.0,26 million,True,False,24411,145,3.89
+GS/2017/page_143.pdf-1,what is the percentage change in credit net from 2016 to 2017?,-0.39896,-39.94%,True,False,24986,279,6.05
+HWM/2017/page_41.pdf-1,"considering the reverse stock split , what was the percentual reduction of the common stock outstand",0.69231,69.23%,True,False,24126,294,4.584
+RSG/2009/page_100.pdf-2,as of december 312019 what was the percentage of restricted cash that was proceeds from the issuance,0.39349,39.3%,True,False,24036,212,4.023
+BLK/2013/page_124.pdf-2,what is the carrying value of notes due by 2017 ? in millions $ .,2448.0,698,False,False,25032,98,2.325
+AAP/2011/page_28.pdf-2,"what is the roi of an investment in s&p500 index from 2006 to january 3 , 2009?",-0.343,-34.30%,True,False,23866,255,4.12
+HOLX/2007/page_129.pdf-1,what is the fair value of hologic common stock used to acquire suros?,46.30435,106500,False,False,23964,133,2.639
+LKQ/2010/page_84.pdf-1,what was the percentage change in rental expense for operating leases from 2008 to 2009?,0.16735,16.73%,True,False,23946,281,4.951
+AAPL/2008/page_78.pdf-2,what was the average change in unrealized gains on derivative instruments?,5.0,5,True,False,24162,197,4.204
+GS/2013/page_152.pdf-2,what was the change in millions between 2012 and 2013 in currency hedges?,383.0,383,True,False,24079,161,4.031
+GPN/2009/page_70.pdf-2,what portion of total assets acquired is composed of goodwill?,0.69676,69.7%,True,False,23903,200,4.0
+C/2008/page_102.pdf-2,what was the change in billions in total capital ( tier 1 and tier 2 ) from 2007 to 2008?,-13.2,-13.2,True,False,24353,167,3.064
+LMT/2006/page_37.pdf-1,"for the the quarter ended december 31 , 2006 what was the percent of the total number of shares purc",0.48171,20.1%,False,False,23626,222,6.716
+AES/2015/page_117.pdf-2,what was the percentage change in proportional free cash flow between 2014 and 2015?,0.39282,39.3%,True,False,24498,243,4.514
+AMT/2005/page_85.pdf-1,what was the increase in long-term debt between 2004 and 2005 in thousands?,296048.0,296048,True,False,23951,182,12.429
+ABMD/2009/page_56.pdf-1,"what are the total contractual commitments , in millions?",40294.0,20.15,False,False,24448,131,3.377
+DISH/2013/page_138.pdf-1,what is the tax expense related to discontinued operations in 2013?,7.0,7 million,True,False,23986,194,4.076
+PM/2018/page_24.pdf-2,what was the difference in percentage return for pmi common stock compared to the s&p 500 index for ,0.538,-53.80%,False,False,23791,420,7.989
+ZBH/2003/page_58.pdf-4,what is the change in inventories net in millions between 2002 and 2003?,270.1,270.1,True,False,24491,137,2.966
+LMT/2013/page_74.pdf-1,what was the average number of weighted average common shares outstanding for diluted computations f,498.9,331.6,False,False,24221,216,4.337
+ETR/2003/page_84.pdf-1,"what amount of long-term debt due in the next 24 months as of december 31 , 2003 , in millions?",965.635,965.64,True,False,24116,257,6.807
+AMT/2008/page_32.pdf-3,for the quarter ended march 312008 what was the percent of the change from the highest to the lowest,0.33084,33.10%,True,False,23946,300,7.067
+TROW/2010/page_22.pdf-2,what was the average price of shares repurchased in 2010?,48.0,48.00,True,False,24364,164,4.535
+UNP/2008/page_27.pdf-1,in 2008 what was the percent of the total operating revenues that was associated with other revenues,0.04741,4.74%,True,False,24025,232,5.383
+APD/2016/page_57.pdf-2,"considering the years 2015-2016 , what is the decrease observed in the cash contributions to funded ",-0.42327,58.2 million,False,False,24300,188,4.18
+ETR/2017/page_114.pdf-1,"what is the difference in payments between entergy arkansas and entergy louisiana , in millions?",4.0,4,True,False,24226,127,2.651
+GIS/2012/page_64.pdf-1,"what is the total interest expense for the year ending on may 27 , 2012 , ( in millions )",12.636,12.274,False,False,24347,250,4.932
+IPG/2009/page_85.pdf-3,what percentage of amounts expensed in 2009 came from discretionary company contributions?,10.82621,10.83%,True,False,24294,215,4.398
+INTC/2013/page_29.pdf-3,what is the percent of the square feet in owned facilities in other countries?,0.35837,35.8%,True,False,23794,199,3.502
+ADBE/2018/page_86.pdf-1,what is the percentage change in total gross amount of unrecognized tax benefits from 2017 to 2018?,0.13419,13.41%,True,False,24251,278,4.37
+APD/2019/page_48.pdf-2,"considering the year 2018 , what is the cash flow result?",-454.2,-454.2 million,True,False,24288,254,4.859
+UNP/2015/page_24.pdf-1,what was the ratio of the free cash flow to the cash provided by operating activities in 2015,0.07135,0.0714,True,False,24009,197,4.027
+ETR/2008/page_355.pdf-2,what percent of the change between net revenue in 2007 and 2008 was due to rider revenue?,0.17972,17.97%,True,False,23848,316,5.161
+IPG/2008/page_62.pdf-2,"what is the change in the balance of liability for all restructuring from 2006 to 2008 , ( in millio",-19.0,-19.0,True,False,23763,215,5.386
+AES/2017/page_157.pdf-1,what percentage was eurasia sbu of total revenue in 2017?,0.151,15.09%,True,False,24321,209,4.45
+JPM/2005/page_37.pdf-1,in 2005 what was the percent of the investment banking as part of the total segments operations,0.34769,34.7%,True,False,24410,195,3.592
+BLK/2014/page_119.pdf-1,what percent higher is fair value than carrying value?,0.07513,7.51%,True,False,24913,240,4.298
+ETR/2008/page_377.pdf-4,what percent of the net change in revenue between 2006 and 2007 was due to transmission revenue?,0.15641,15.64%,True,False,23960,281,5.577
+ETR/2017/page_26.pdf-4,what is the growth rate in net revenue in 2016?,-0.07443,-7.44%,True,False,23894,255,4.225
+PNC/2009/page_46.pdf-4,what is the average percentage for aaa rated facilities in 2008 and 2009?,16.5,16.5%,True,False,24390,185,3.373
+ZBH/2017/page_53.pdf-1,what is the company's net earnings as a percent of net sales in 2015 ? ( net profit margin ),0.04392,4.39%,True,False,24488,212,3.657
+MRO/2004/page_36.pdf-2,what were total heavy fuel oil sales in tbd for the three year period?,71.0,71,True,False,24270,162,3.506
+AON/2014/page_47.pdf-1,what is the variation between the average and the highest operating margin?,0.02533,2.53%,True,False,24026,261,4.57
+MAS/2018/page_60.pdf-2,what portion of the revised purchase price of kichler is dedicated to goodwill?,0.11658,11.65%,True,False,23863,197,3.337
+MRO/2007/page_134.pdf-2,what were total tax benefits realized for deductions during 2007 and 2006 in excess of the stock-bas,66.0,66,True,False,24408,140,2.762
+ETR/2017/page_316.pdf-3,in 2016 what was the ratio of the net income increased to the net revenues,0.0611,6.10%,True,False,23742,240,5.02
+LMT/2017/page_80.pdf-1,what was the average weighted average common shares outstanding for diluted computations from 2015 t,302.8,302.8 million,True,False,24276,198,3.432
+GS/2012/page_165.pdf-2,what percentage of total other assets in 2011 was comprised of goodwill and identifiable intangible ,0.23618,23.6%,True,False,24025,211,4.548
+CME/2017/page_97.pdf-4,how many total votes can the class b-3 provide in 2017?,1300.0,1300,True,False,24081,162,3.097
+JPM/2018/page_110.pdf-4,what is the estimated percentual decrease observed in the htm investment securities from 2017 to 201,0.34146,34.1%,True,False,24695,280,5.524
+MRO/2015/page_18.pdf-2,"in 2018 , what percentage of undeveloped acres were located in the u.s?",0.12574,12.57%,True,False,23615,228,7.759
+AMAT/2014/page_18.pdf-2,"what are the total sales reported in 2012 , ( in billion ) ?",0.08571,8.57,False,False,24215,185,4.338
+IPG/2008/page_62.pdf-1,"what is the average liability for all three programs , as of december 31 , 2008 , in millions?",4.26667,4.27,True,False,23760,202,4.004
+APD/2013/page_36.pdf-1,"considering the year 2013 , what is the sales to operating income ratio?",6.88702,6.89,True,False,23717,158,3.332
+HIG/2011/page_188.pdf-2,in 2010 what was the percentage change in the deferred policy acquisition costs and present value of,-0.07758,-7.75%,True,False,24058,267,5.341
+PNC/2015/page_159.pdf-2,"for 2015 and 2014 , what was the average in millions for provision recapture for purchased impaired ",86.5,86.5,True,False,23764,195,4.001
+MRO/2017/page_111.pdf-2,what was purchases of reserves in place in 2016?,-13.0,34,False,False,24101,97,2.64
+PNC/2009/page_46.pdf-3,did the share of securities rated aaa/aaa increase between 2008 and 2009?,no,no,True,False,24391,134,2.883
+IP/2005/page_35.pdf-1,what is the change in total debt to be repaid in the contractual obligations for future payments und,2022.0,2022,True,False,24492,162,3.656
+LMT/2015/page_56.pdf-4,what was average net sales for space systems in millions from 2013 to 2015?,9198.33333,9198.33,True,False,24298,219,4.16
+BLL/2010/page_28.pdf-3,what is the five year total return on ball stock?,34.96,78.93%,False,False,24012,226,4.279
+IPG/2015/page_37.pdf-3,what is the cash flow statement effect of the change in cash used for working capital from 2013 to 2,-121.5,-121.5 million,True,False,24126,206,3.912
+KHC/2016/page_23.pdf-3,what portion of the company owned facilities are located in the rest of the world?,0.31325,31.33%,True,False,24013,202,5.017
+AON/2009/page_46.pdf-2,what is the lowest segment operating income?,846.0,846,True,False,24071,88,2.046
+GS/2014/page_136.pdf-1,"in millions in 2014 , 2013 , and 2012 , what was the greatest amount of hedged borrowings and bank d",6999.0,6999,True,False,23974,127,2.083
+RSG/2015/page_142.pdf-2,what is the percentage growth of the aggregate fair values of our outstanding fuel hedge for 2014 to,0.09884,9.88%,True,False,23996,282,4.977
+MMM/2005/page_95.pdf-1,in 2005 what was the ratio of the breast implant receivables to the breast implant liabilities,18.57143,18.57,True,False,24336,174,3.69
+GS/2017/page_106.pdf-2,"what percentage of total market risk for positions , accounted for at fair value , that are not incl",0.56618,56.6%,True,False,24132,222,5.8
+UAA/2016/page_52.pdf-1,what percent of total operating income was asia-pacific in 2015?,0.08899,8.9%,True,False,24061,222,4.432
+LMT/2015/page_56.pdf-3,what was the average backlog at year-end from 2013 to 2015,19700.0,19700,True,False,24296,232,4.341
+DVN/2007/page_58.pdf-3,what percentage of the total oil and gas mmboe comes from canada?,24.69136,24.69%,True,False,24175,193,3.909
+INTC/2013/page_33.pdf-2,what was the percent of the impairment charges to the net revenue in 2013,0.00455,0.454%,True,False,24337,195,3.788
+OKE/2008/page_86.pdf-1,what was the total net change in net fair value of derivatives outstanding at between 2007 and 2008 ,233629.0,233629,True,False,24188,220,3.916
+ETR/2017/page_316.pdf-1,what was the average net revenue between 2016 and 2017 in millions,1521.55,1521.55,True,False,23741,206,4.203
+OKE/2008/page_86.pdf-2,what was the percentage change in net fair value of derivatives outstanding at between 2007 and 2008,9.28167,927.5%,True,False,24187,288,5.012
+FRT/2005/page_117.pdf-1,what is the growth of the additions in comparison with the growth of the deductions during 2003 and ,0.91251,"The growth of additions was approximately 21.2%, while the growth of deductions was approximately 70.0%.",False,False,23487,491,10.321
+MRO/2007/page_149.pdf-1,5 development costs incurred during the period 1654 1251 1030,1311.66667,"Development costs incurred during the period were $1,654 million in 2007, $1,251 million in 2006, and $1,030 million in 2005.",False,False,23768,197,4.75
+AES/2016/page_191.pdf-1,what was the percentage change in the unrecognized tax benefits from 2014 to 2015?,-0.0533,-5.34%,True,False,24388,216,4.341
+STZ/2006/page_68.pdf-2,what were the remaining mondovi net assets acquired following the sale of certain excess assets from,1042490.2,871861,False,False,24576,189,3.553
+INTC/2013/page_29.pdf-1,"what percentage of major facilities by square footage are owned as of december 28 , 2013?",0.84882,84.73%,True,False,23799,216,5.902
+CDNS/2012/page_30.pdf-1,what was the percentage cumulative 5-year total stockholder return for cadence design systems inc . ,-0.2108,-21.08%,True,False,23680,263,12.061
+GPN/2017/page_77.pdf-3,what are the total amount of net tangible assets obtained through the acquisition?,62154.0,0,False,False,23939,344,6.613
+STT/2009/page_73.pdf-1,what was the percentage change in the amortized cost in 2009,0.23125,23.1%,True,False,23938,275,5.89
+BLK/2012/page_37.pdf-2,what is the long-term retail/hnw in emea as a percentage of the total long-term retail/hnw?,0.19257,19.24%,True,False,24332,225,4.234
+HII/2017/page_104.pdf-3,what was the ratio of the 2017 total long term debt to 2016,1.00078,1.0008,True,False,24395,193,3.77
+SWKS/2006/page_81.pdf-2,what is the percentage change in in the pension liability balance from 2004 to 2006?,0.44656,-23.77%,False,False,24234,274,5.412
+FBHS/2017/page_23.pdf-1,in 2017 what was amount net sales applicable to international market in millions,1320.825,666.94,False,False,24138,343,4.872
+HOLX/2008/page_84.pdf-2,what portion of the total contractual obligations are due within the next 12 months?,0.05793,5.79%,True,False,24230,220,4.532
+MRO/2015/page_18.pdf-3,"what was total net undeveloped acres expiring for the three year period , in thousands?",5808.0,5808,True,False,23615,181,4.269
+HOLX/2010/page_124.pdf-1,what percentage of the total estimated purchase price was cash?,0.34024,34.0%,True,False,24016,226,5.008
+ALXN/2007/page_104.pdf-1,what is the average future minimum annual rental payment for the next five years?,4441.2,3421.4,False,False,23815,229,4.397
+AES/2015/page_117.pdf-4,net cash provided by operating activities increased by what percentage in 2014?,0.19151,-34.06%,False,False,24494,223,4.089
+PPG/2011/page_70.pdf-1,"assuming the same trend as in 2011 , what would total stock-based compensation cost be for 2012?",24.92308,25,True,False,24543,292,5.525
+BLK/2013/page_125.pdf-2,what are the future minimum commitments under the operating leases in 2015 as a percentage of the to,0.09876,9.88%,True,False,24367,206,3.994
+VLO/2018/page_25.pdf-1,for the fourth quarter ended december 312018 what was the total number of shares purchased in novemb,0.47645,3655945,False,False,24015,95,3.833
+C/2008/page_102.pdf-3,what was the change in billions in tier 1 capital from 2007 to 2008?,-11.0,-11.0,True,False,24346,184,2.82
+LMT/2012/page_47.pdf-1,what is the growth rate in operating profit for space systems in 2012?,0.01881,1.88%,True,False,24208,225,4.286
+ETFC/2013/page_26.pdf-2,"at december 31 , 2013 what was the ratio of square feet of our office in alpharetta , georgia to the",2.37383,2.37,True,False,24097,201,4.137
+LMT/2005/page_40.pdf-4,"at december 31 , 2005 what was the percent of the total commitment applicable to the standby letters",0.8578,85.8%,True,False,24422,205,3.685
+DRE/2002/page_40.pdf-1,what is the percent change in quarterly cash dividend for the period ended march 31 2002 to the peri,1.11111,1.11%,True,False,23602,290,4.389
+AMT/2005/page_54.pdf-1,"what portion of the adjusted consolidated cash flow for the twelve months ended december 31 , 2005 i",-0.05751,-5.75%,True,False,24158,269,5.042
+ETR/2008/page_355.pdf-1,what is the growth rate in net revenue in 2008 compare to 2007?,0.09394,9.39%,True,False,23844,273,4.73
+AON/2014/page_47.pdf-3,"what is the total operating income in 2013 , ( in millions ) ?",1492.0,318,False,False,24029,45,1.364
+ETR/2008/page_377.pdf-2,"what is the net change in net revenue for entergy texas , inc . during 2007?",39.0,39,True,False,23958,157,2.823
+CDNS/2006/page_30.pdf-2,what is the rate of return of an investment in s&p500 inc from 2001 to 2005?,0.1115,16.61%,False,False,23762,257,5.291
+UA/2015/page_71.pdf-1,what was the profit margin in 2015,0.0583,5.83%,True,False,23856,208,4.755
+RSG/2015/page_126.pdf-2,"during 2013 , what was the ratio of the accrued interest $ 1.2 million to the recognized a interest ",14.16667,0.0706,False,False,24050,193,3.26
+PNC/2009/page_41.pdf-3,in 2009 what was the ratio of the commercial mortgages at fair value to lower of cost or market \\n,4.18327,4.18,True,False,24355,211,3.85
+GIS/2019/page_37.pdf-2,in 2019 what was the percent of the total future estimated cash payments under existing contractual ,0.10664,10.66%,True,False,24270,233,4.674
+ADBE/2018/page_86.pdf-2,"for fiscal 2018 , what percentage of the total change in the valuation allowance was due to settleme",0.0,2.48%,False,False,24252,240,4.289
+DRE/2013/page_39.pdf-2,"what was the percent of the debt maturities outstanding at december 31 , 2013 that was unsecured deb",0.72093,72.09%,True,False,24055,245,4.82
+UNP/2006/page_37.pdf-2,what is the anticipated percentage increase in the capital investment in 2007 from 2006,-0.99857,42.7%,False,False,24149,245,5.09
+UNP/2006/page_37.pdf-1,in 2006 what was the percent of the total investments amount attributable to the track,0.66325,66.4%,True,False,24148,198,3.373
+STZ/2006/page_68.pdf-3,what portion of the robert mondavi's total assets acquired is related to goodwill?,0.34308,34.3%,True,False,24570,204,3.665
+AES/2017/page_157.pdf-2,"as of december 31 , 2017 , assuming an average price per share of $ 12.12 , what would be the cost i",2981.52,2985.12,True,False,24347,188,3.648
+AMT/2004/page_81.pdf-1,what is the percentage change in amortization expense from from 2008 to 2009?,0.01981,-1.88%,False,False,24107,294,5.456
+PM/2015/page_127.pdf-1,what is the percentage increase in total accumulated other comprehensive losses from 2014 to 2015?,0.37738,37.8%,True,False,24056,279,3.771
+K/2013/page_62.pdf-2,what percent of total derivatives are from interest rate contracts in 2013?,0.73215,73.2%,True,False,23924,199,3.92
+MS/2014/page_292.pdf-2,accrued interest represented how much of the ending balance in uncertain tax benefits as of december,0.1158,11.73%,False,False,24081,256,4.618
+IP/2012/page_93.pdf-2,what was the change in rent expenses between 2010 and 2011?,-5.0,-5 million,True,False,24411,131,3.071
+PPG/2011/page_70.pdf-2,"what was the increase for the maximum company match on january 1 , 2011?",0.015,25%,False,False,24538,164,3.689
+C/2017/page_328.pdf-4,what was the percentage growth of the five-year cumulative total return of s&p financials from 2015 ,0.22742,22.74%,True,False,23574,292,5.369
+PNC/2013/page_112.pdf-2,"in these equity investment balances , what is the percent of unfunded commitments at december 31 , 2",0.06298,6.30%,True,False,24332,221,4.148
+LMT/2017/page_80.pdf-2,what was the change in millions of weighted average common shares outstanding for diluted computatio,-12.5,-12.5,True,False,24279,170,3.053
+LLY/2018/page_63.pdf-1,what was the percentage change in inventories between 2017 and 2018?,-0.07772,-7.77%,True,False,23960,285,5.791
+HOLX/2008/page_144.pdf-1,what is the estimated price of hologic common stock used in the acquisition of suros?,23.15217,23.13,True,False,24073,196,4.871
+DRE/2009/page_72.pdf-2,what was the percent of the increase in compensation cost recognized for rsus from 2008 to 2009,0.4898,48.98%,True,False,24049,249,4.448
+ETFC/2007/page_126.pdf-2,as of december 2007 what was the ratio of the future debt maturities for 2011 to the amounts after 2,0.15146,0.151,True,False,23794,186,3.571
+IP/2009/page_37.pdf-2,north american consumer packaging net sales where what percentage of consumer packaging sales in 200,0.78247,78.2%,True,False,24382,225,3.724
+ADBE/2018/page_86.pdf-4,what is the combined amount of accrued interest and penalties related to tax positions taken on our ,48.2,48.2,True,False,24259,120,2.938
+C/2017/page_328.pdf-3,what was the difference in percentage cumulative total return for the five year period ended 31-dec-,-0.374,37.4%,False,False,23580,314,5.852
+PNC/2009/page_46.pdf-1,"if there were 50 facilities being rated in 2009 , how many were bbb/baa?",1.0,1,True,False,24393,154,3.536
+ETR/2011/page_324.pdf-4,"what will be the yearly interest expense for entergy louisiana for the bond issued in 2012 , ( in mi",249.98125,4.69,False,False,24269,183,4.013
+PM/2015/page_85.pdf-3,"what is the interest expense in 2015 assuming that all the debt is interest bearing debt , ( in bill",0.855,0.855,True,False,25131,188,3.889
+AAPL/2003/page_24.pdf-1,"what were capital expenditures associated with the retail segment since its inception , exclusive of",198.0,198,True,False,24566,139,3.201
+ETR/2015/page_109.pdf-1,"what is the difference in payments between entergy arkansas and entergy new orleans , in millions?",66.0,66,True,False,23975,121,2.325
+MSI/2006/page_61.pdf-4,"what was the average rental expense , net of sublease income from 2004 to 2006 in millions",349.5,232,False,False,24376,181,3.107
+CDNS/2018/page_31.pdf-2,what was the difference in percentage cumulative 5-year total stockholder return for cadence design ,1.4529,145.29%,True,False,23851,363,5.938
+HWM/2016/page_40.pdf-2,"considering the year 2016 , what was the percentual increase in the high sale price observed during ",0.12524,12.53%,True,False,24099,285,5.359
+ETR/2017/page_26.pdf-3,what is the net change in net revenue during 2016?,-124.0,-124 million,True,False,23894,173,3.546
+ABMD/2006/page_75.pdf-2,the non-recurring charge for the office facility closing was what percent of lease expense in 2006?,0.04596,4.59%,True,False,23990,231,4.53
+BDX/2019/page_45.pdf-1,in 2019 what was the percent of the financing structure that was based on the equity,-44.6,54.4%,False,False,24068,339,6.733
+UNP/2013/page_54.pdf-2,in 2013 what was the percent of the total operating revenues from mexico,0.0001,9.55%,False,False,24096,240,4.873
+AWK/2013/page_132.pdf-4,what was the net effect of the one-percentage point increase and decrease on total service and inter,1393.0,1393,True,False,23615,151,3.484
+MRO/2009/page_56.pdf-2,what was the spread between the high and low henry hub natural gas ( dollars per mcf ) in 2009?,45.38,Insufficient data to determine the spread.,False,False,24281,158,3.406
+IP/2006/page_32.pdf-2,in 2005 what percentage of consumer packaging sales were represented by foodservice net sales?,0.19465,19.4%,True,False,24377,204,4.547
+LMT/2005/page_40.pdf-3,what was the percent of the total commitment with an expiration of less that 1 year was subject to r,0.93278,90.4%,False,False,24420,211,4.231
+APD/2014/page_44.pdf-1,"considering the year 2014 , what is the variation between the capital expenditures on a gaap basis a",202.9,202.9 million,True,False,24438,183,4.051
+IPG/2015/page_48.pdf-2,what is the percentage change in interest income from 2014 to 2015?,-0.16788,-16.79%,True,False,24202,279,6.281
+AES/2002/page_46.pdf-2,what was the average high and low stock price for the second quarter of 2002?,6.36,"Average High Price: $9.17, Average Low Price: $3.55",False,False,23715,177,3.318
+JPM/2008/page_85.pdf-4,"assuming a 5% ( 5 % ) rate of return , what would the earnings be ( in millions ) on 2008 total adju",98344.75,98345,True,False,24402,180,3.56
+DRE/2009/page_72.pdf-1,what was the value of the rsu's granted,14759301.12,14.77 million,False,False,24037,199,4.078
+APTV/2014/page_49.pdf-2,what was the percentage total return for delphi automotive plc for the five years ended december 31 ,2.5082,250.82%,True,False,23851,256,5.51
+ILMN/2007/page_78.pdf-2,what was the percentage change in net income ( loss ) on a pro forma basis between 2006 and 2007?,1.44634,144.6%,True,False,23947,290,4.525
+BLK/2012/page_160.pdf-1,what percent did the balance increase between the beginning of 2010 and the end of 2012?,0.41754,41.9%,True,False,24513,214,4.401
+EW/2017/page_82.pdf-2,what percentage of the total purchase price net of cash acquired is ipr&d ?,0.29144,29.2%,True,False,24013,220,4.371
+JPM/2008/page_85.pdf-1,tier 2 capital is what percent of total capital for 2008?,0.26319,26.33%,True,False,24385,198,4.068
+APD/2018/page_59.pdf-1,"considering the fair market value of plan assets in 2018 , what is its estimated return for 10 years",4302.67611,7885.4,False,False,24265,324,6.513
+ETR/2002/page_24.pdf-2,in 2002 what was the ratio of the net mw in operation to the generation in gwh for the year,0.13204,0.132,True,False,23984,199,3.934
+PNC/2011/page_87.pdf-4,"for 2013 , what was the total in millions of the combined interest only product and principal and in",1542.0,1542,True,False,24353,120,2.913
+UNP/2011/page_76.pdf-2,"in 2011 , did the company distribute more to shareholders than debtholders?",yes,yes,True,False,24034,165,2.999
+HII/2017/page_104.pdf-4,what is the ratio of the deffered tax assets for the state income tax credit carry-forwards to the n,5.33333,5.33,True,False,24405,215,3.734
+GPN/2009/page_70.pdf-3,what percent of assets acquired by the acquisition are non-tangible assets?,0.96042,96.06%,True,False,23906,321,5.572
+MSI/2009/page_65.pdf-1,in 2009 what was the company 2019s consolidated net sales in billions,22.1875,7.146,False,False,24416,138,3.337
+DISH/2013/page_138.pdf-3,"what was the average revenue from discontinued operations in 2013 and 2011 , in millions?",738.5,738.5,True,False,23992,190,3.858
+ANSS/2013/page_55.pdf-1,as of december 312013 what was the percent of the total contractual obligations global headquarters ,0.47317,47.3%,True,False,23975,188,4.158
+MRO/2008/page_69.pdf-1,what is the difference between the high wti crude oil and western canadian select prices?,30.34,30.34,True,False,24328,140,3.566
+IPG/2008/page_93.pdf-4,"what is the total amount of parent company guarantees combined for 2007 and 2008 , in millions?",582.8,582.8,True,False,24219,129,2.553
+ETR/2017/page_316.pdf-2,what percent increase in net income was experienced between 2015 and 2016,0.06507,Unable to calculate percentage without net income for 2015.,False,False,23741,512,8.391
+HIG/2008/page_318.pdf-1,in 2008 what was the percent of the total gaap stockholders 2019 equity and aggregate statutory capi,0.43892,"65.00% (of GAAP stockholders' equity), 43.8% (of aggregate statutory capital)",False,False,24439,393,6.445
+HII/2017/page_47.pdf-1,what was the return on total assets during 2013?,0.04216,4.22%,True,False,23805,202,3.782
+AMT/2005/page_105.pdf-3,what was the percentage of the anticipated approximate tax refund in 2003 based on the nol $ 90.0 mi,0.23684,72.22%,False,False,24101,239,4.108
+MAS/2012/page_70.pdf-3,as of december 31 2010 percent of the cabinets and related products to the total gross goodwill,0.13923,13.92%,True,False,24324,217,3.957
+L/2015/page_59.pdf-1,what is the roi of an investment in loews common stock from 2010 to 2011?,-0.0263,-2.63%,True,False,23694,227,3.642
+AAPL/2003/page_24.pdf-2,what was the greatest gross margin percentage in the three year period?,0.279,27.9%,True,False,24553,108,3.938
+RE/2015/page_33.pdf-3,"what is the total value of fixed maturities and cash as of december 31 , 2015 , in billions?",15.4698,17.7,False,False,24566,123,3.207
+GPN/2009/page_70.pdf-4,what percent of assets acquired by the acquisition are non-tangible assets?,0.96042,96.06%,True,False,0,0,0.006
+CAG/2008/page_75.pdf-1,what percentage of total inventories is comprised of finished goods in 2007?,0.61615,61.6%,True,False,23765,193,3.785
+K/2013/page_62.pdf-1,what was the percentage change in the company recognized tax-related interest and penalties in 2011 ,0.15789,-13.64%,False,False,23928,416,7.394
+UAA/2016/page_52.pdf-2,what is the operating margin for connected fitness in 2014?,-0.68042,Not calculable (negative operating margin),False,False,24059,309,5.023
+DISCA/2012/page_39.pdf-1,what is the difference in millions of international subscribers between discovery channel and animal,63.0,63 million,True,False,24135,121,2.679
+PM/2015/page_38.pdf-2,what is the percentage change in the weighted-average discount rate for non-u.s . pension plans from,-0.125,-12.5%,True,False,24396,299,6.005
+CME/2012/page_70.pdf-3,what was the percent of minimum total assets available for default that was guaranty fund contributi,0.26424,26.4%,True,False,25101,214,4.669
+APD/2013/page_32.pdf-2,"considering the gaap basis , what was the growth observed in the effective tax rate during 2012 and ",0.009,4.12%,False,False,24148,257,4.823
+ILMN/2007/page_78.pdf-1,for the year ended december 302007 what was the net margin,0.0474,4.74%,True,False,23936,217,3.815
+PM/2015/page_127.pdf-2,what is the percentage increase in total accumulated other comprehensive losses from 2013 to 2014?,0.62912,62.9%,True,False,24056,281,5.743
+ETR/2016/page_418.pdf-2,"what is the net change in net revenue during 2016 for entergy texas , inc.?",7.0,7.0 million,True,False,23748,156,3.578
+CDNS/2018/page_31.pdf-4,what was the percentage cumulative 5-year total stockholder return for cadence design systems inc . ,2.1113,211.13%,True,False,23843,266,5.477
+SNA/2012/page_33.pdf-3,what was the ratio of the snap-on 2019s performance to that of the standard & poor 2019s 500 stock i,1.72447,1.725,True,False,23744,193,3.549
+AON/2009/page_48.pdf-3,what was the total revenues in 2009 based on the consulting segment generated 17% ( 17 % ) of our co,7452.94118,7441.18,True,False,24036,182,3.655
+C/2010/page_223.pdf-2,what is the percentage of allowance of the company's purchased distressed loan portfolio at december,0.16418,16.43%,True,False,23876,193,4.196
+MRO/2009/page_139.pdf-2,what was highest net rental expense in millions?,267.0,267,True,False,24190,119,2.607
+CMCSA/2015/page_64.pdf-1,what would the investment income ( loss ) have been in 2015 without the gain from the sale of shares,-73.0,81,False,False,24240,251,4.334
+STZ/2006/page_68.pdf-1,what is the current ratio of robert mondavi?,1.65246,1.65,True,False,24564,168,2.796
+ETR/2002/page_24.pdf-3,what is the percent change in earnings for non-utility nuclear from 2001 to 2002?,0.57031,57.03%,True,False,23981,221,7.067
+LMT/2015/page_54.pdf-2,what were average backlog at year-end for mfc from 2013 to 2015 in millions?,14366.66667,14366.67,True,False,24298,263,4.688
+RSG/2015/page_126.pdf-1,"as of december 31 , 2015 what was the percentage decline in the gross unrecognized tax benefits from",-0.32953,32.94%,False,False,24046,277,5.279
+AAP/2012/page_12.pdf-2,what is the growth rate in the number of stores during 2011?,0.02701,2.70%,True,False,24071,226,3.73
+KHC/2016/page_23.pdf-1,what portion of the company owned facilities are located in europe?,0.13253,13.25%,True,False,24009,200,4.177
+IPG/2008/page_21.pdf-3,what was the average price per share from november to december?,3.61,3.61,True,False,23607,190,3.596
+C/2010/page_223.pdf-4,what is the gross carrying amount in millions of the company's purchased distressed loan portfolio a,469.0,546,False,False,23878,169,3.194
+BLL/2007/page_35.pdf-4,"including the shares repurchased under the december 2007 repo agreement , what was the total authori",12.675,12.675,True,False,24065,218,4.158
+BLL/2010/page_28.pdf-1,what was the percentage cumulative total shareholder return for ball corporation for the five year p,0.7893,78.93%,True,False,24025,254,4.267
+AES/2015/page_117.pdf-1,what was the percentage change in proportional free cash flow between 2013 and 2014?,-0.29898,-29.87%,True,False,24498,245,4.496
+ZBH/2017/page_71.pdf-1,what was the change in defined contribution plans expenses for the u.s . between 2015 and 2016 in mi,2.3,2.3,True,False,24516,161,3.096
+ETFC/2011/page_82.pdf-1,"what percentage of total goodwill is attributable to retail bank reporting unit as december 31 , 201",0.02099,2.1%,True,False,23693,205,3.718
+LMT/2005/page_40.pdf-2,what percent of total commitments expire in 1-3 years?,0.17091,17.1%,True,False,24411,202,3.848
+FIS/2007/page_94.pdf-2,what portion of the future minimum operating lease payments is due in the next 12 months?,0.33482,"83,382",False,False,23961,155,3.037
+HUM/2017/page_133.pdf-4,"considering the years 2016-2017 , what is the percentual increase observed in the payment amount per",0.28448,28.45%,True,False,24189,276,5.077
+PKG/2009/page_65.pdf-2,what percentage of total purchase commitments are due in 2013?,0.03334,3.34%,True,False,23888,223,3.016
+MRO/2017/page_111.pdf-1,"for revisions of previous estimates , what was the impact in mmboe resulting from an increase in dri",172.0,172,True,False,24137,233,4.611
+LLY/2018/page_63.pdf-3,what was the percent of the finished products to the total inventory,0.24031,24.0%,True,False,23957,190,3.667
+APD/2013/page_32.pdf-1,what was the percentual increase of other income due to favorable foreign exchange and reimbursement,0.11465,11.45%,True,False,24143,275,17.042
+RSG/2017/page_138.pdf-1,in 2017 what was the debt to equity based on the 2017 actual asset allocation,2.33333,2.33,True,False,23866,206,3.967
+MS/2017/page_74.pdf-2,what percentage of average common equity attribution in 2016 is made up of institutional securities?,0.627,62.7%,True,False,24485,206,4.256
+HII/2017/page_47.pdf-2,what was the return on total assets during 2014?,0.05418,5.42%,True,False,23805,191,3.88
+MS/2014/page_267.pdf-1,what is the net change in shares of common stock outstanding from 2013 to 2014 in millions?,6.0,6,True,False,24051,153,3.272
+AMT/2008/page_32.pdf-2,"on february 13 , 2009 what was the market capitalization",13764217.57366,11.43 billion,False,False,23929,187,4.396
+MRO/2008/page_69.pdf-4,what was the difference between the high and low aeco natural gas sales index?,5.92,5.92,True,False,24327,139,3.161
+HOLX/2008/page_144.pdf-2,what portion of the suros acquisition price is paid in cash?,0.56026,139000,False,False,24068,241,5.073
+PNC/2016/page_177.pdf-1,"as of december 31 , 2016 what was the percent of the total commercial lending of the total commitmen",0.66051,65.96%,True,False,23948,232,5.136
+AES/2015/page_117.pdf-3,what were average proportional recoverable environmental capital expenditures for the years december,159.33333,159.33,True,False,24510,162,7.196
+CDNS/2018/page_31.pdf-1,"what is the total return is $ 100000 are invested in s&p500 on january 1st , 2015 and sold at the en",18770.0,16700,False,False,23848,305,6.104
+PNC/2018/page_171.pdf-2,what was the percentage increase total commitments to extend credit and other commitments,0.0527,6.37%,False,False,24016,284,6.36
+V/2013/page_41.pdf-1,"for the quarter ended september 30 , 2013 what was the total number of shares purchased in august",0.89911,6640563,False,False,23855,92,2.116
+HOLX/2008/page_142.pdf-2,what portion of the purchasing price is dedicated to net tangible assets?,0.79233,79.3%,True,False,24006,205,4.1
+JPM/2005/page_37.pdf-2,"without the commercial banking segment , what would 2005 operating income have been reduced to , in ",9514.0,9514,True,False,24413,198,6.063
+ETFC/2014/page_26.pdf-4,what was the difference in total return percentage beteween e*trade financial corporation and the s&,-0.6733,67.33%,False,False,23499,380,7.241
+JPM/2009/page_133.pdf-2,"if there were a 100bp rise in rates , how much more would the impact be on earnings in 2009 vs . 200",1226.0,1226 million,True,False,24565,234,4.501
+MRO/2007/page_134.pdf-3,what was the average expected life of the options for the three year period?,5.2,5.2 years,False,False,24387,203,3.978
+BLK/2012/page_37.pdf-1,what is the long-term retail/hnw in americas as a percentage of the total long-term retail/hnw?,0.73863,73.8%,True,False,24332,215,4.213
+PPG/2013/page_40.pdf-2,does the company spend more on advertising in 2012 than on research and development?,no,no,True,False,24293,132,2.847
+ETR/2008/page_321.pdf-1,what is the annual interest expense for entergy louisiana incurred from the series first mortgage bo,19.5,19.5,True,False,23971,183,3.533
+C/2008/page_211.pdf-2,in 2008 what was the carrying amount reported on the consolidated balance sheet to aggregate unpaid ,2.50023,2.50,True,False,24644,220,4.184
+AES/2003/page_52.pdf-1,for the three months ended march 2003 what were the total sales proceeds for subsidiaries assets in ,613.0,613,True,False,24093,192,3.917
+STZ/2006/page_68.pdf-4,goodwill was what percent of the mondavi acquisition?\\n,0.34308,61.5%,False,False,24567,203,4.053
+JPM/2014/page_65.pdf-1,what is the total return of the jpmorgan chase & co . stock over the above refernced five year perio,0.6748,67.48%,True,False,23717,259,5.085
+NKE/2016/page_37.pdf-2,what percentage of long-term debt is due after 2021?,0.89163,89.01%,True,False,25075,220,4.359
+L/2015/page_59.pdf-3,what was the overall growth of the s&p 500 index from 2010 to 2015,0.8075,80.75%,True,False,23694,258,4.638
+HOLX/2007/page_129.pdf-2,what portion of the total acquisition price of suros is dedicated to goodwill?,0.75627,75.6%,True,False,23963,205,3.843
+LKQ/2016/page_26.pdf-1,what was the percentage cumulative return for lkq corporation for the five years ended 12/31/2016?,1.04,104%,True,False,23603,232,4.877
+VRTX/2003/page_71.pdf-1,what percent of the total common stock plans are related to the vertex purchase plan?,0.01121,1.12%,True,False,24065,185,4.12
+PNC/2011/page_87.pdf-1,"based upon outstanding balances at december 31 , 2011 what was the percent of the principal and inte",0.22735,36.7%,False,False,24357,198,4.171
+GS/2012/page_165.pdf-3,"for miscellaneous receivables and other assets , what was the percentage that represented assets rel",3.464,82.8%,False,False,24047,255,4.816
+JPM/2018/page_110.pdf-1,what is the average of the afs investment securities during the years 2016-2018?,221866.0,221866,True,False,24692,233,4.29
+PNC/2011/page_78.pdf-3,"between december 31 , 2011 and december 31 , 2010 , what was the change in the unpaid principal bala",0.2,-0.2,False,False,24332,186,3.164
+ILMN/2007/page_78.pdf-3,what was the percentage change in revenue on a pro forma basis between 2006 and 2007?,0.96071,96.0%,True,False,23943,269,4.701
+PM/2017/page_99.pdf-2,what is the growth rate of the net earnings for basic and diluted eps?,-0.13342,-12.09%,False,False,23679,285,3.572
+EW/2016/page_94.pdf-2,what is the percentage difference in the fair value per share between 2014 and 2015?,0.54298,54.29%,True,False,24055,280,7.374
+HWM/2016/page_40.pdf-1,what is the average price per share of the company 2019s common stock in the third quarter of 2016?,30.0,30.00,True,False,24098,198,4.085
+PM/2018/page_24.pdf-3,what was the percentage return for pmi common stock for the five years ended 2018?,-0.035,-3.50%,True,False,23781,241,4.601
+IP/2005/page_35.pdf-2,what is the change in total debt to be repaid in the contractual obligations for future payments und,-262.0,-262,True,False,24492,151,3.056
+UPS/2006/page_32.pdf-4,for the five years ended 12/31/2006 what is the performance difference of the class b common stock o,-33.84,33.84%,False,False,23775,366,5.319
+AAL/2015/page_118.pdf-2,what were total operating expenses as a percentage of revenue in 2013?,0.9379,93.8%,True,False,24015,325,5.403
+ETR/2004/page_213.pdf-3,"what is the net change in net revenue during 2003 for entergy louisiana , inc.?",50.8,50.8 million,True,False,23866,157,3.181
+CME/2010/page_42.pdf-1,"for the chicago headquarters lease , assuming the two options to extend the term are exercised , wha",2041.0,2039,True,False,24978,137,3.175
+ETFC/2013/page_26.pdf-1,"at december 31 , 2013 what was the percent of square feet of our office in alpharetta , georgia not ",0.64961,64.96%,True,False,24093,230,3.438
+LMT/2010/page_42.pdf-1,"what was the percentage change in capital expenditures for property , plant and equipment from 2009 ",-0.03756,-3.75%,True,False,24501,242,5.692
+TSCO/2017/page_31.pdf-1,what was the percentage growth in the stock price performance for tractor supply company from 2012 t,0.7414,74.14%,True,False,23652,234,4.955
+C/2008/page_211.pdf-4,what was the ratio of the total loss due to instrument-specific credit risk for 2008 to 2007,0.20213,0.20,False,False,24637,173,3.691
+FRT/2005/page_117.pdf-2,what is the increase observed in the balance at the end of the year during 2005 and 2004?,0.11491,68412000,False,False,23486,189,2.649
+ETFC/2011/page_82.pdf-3,"as of december 31 , what was percent of the capital markets goodwill to the total",0.07362,7.37%,True,False,23690,203,3.879
+UNP/2007/page_65.pdf-1,"as of as of december 31 , 2007 what was the percent of the total debt maturities that was due in 200",0.07057,7.05%,True,False,24078,195,4.211
+ETR/2002/page_86.pdf-1,what is the percent change in annual long-term debt maturities ( excluding lease obligations ) and a,0.71179,-41.6%,False,False,24057,299,4.907
+CAT/2017/page_85.pdf-2,what was the growth rate of maximum exposure to loss from vies from 2016 to 2017?,-0.42458,-42.5%,True,False,24369,279,5.171
+AES/2017/page_175.pdf-1,"what percent of the receivable balances in puerto rico as of december 31 , 2017 was current?",0.38372,38.37%,True,False,24146,237,4.081
+HII/2014/page_69.pdf-2,what portion of total backlog is related to newport news segment?,0.50632,64.6%,False,False,24251,218,3.828
+VTR/2007/page_47.pdf-4,what was the value of the treasury stock as of december 312007,643822.41,644198.41,True,False,23753,199,3.055
+AAL/2015/page_118.pdf-1,on december 312013 what was the net profit margin,0.0621,6.21%,True,False,24012,179,4.597
+CNP/2010/page_31.pdf-2,"considering the state of minnesota , what is the percentage of commercial/industrial customers conce",0.0837,8.35%,True,False,24200,192,5.526
+LMT/2015/page_99.pdf-3,what was the change in millions of total long-term debt net from 2014 to 2015?,9119.0,9119,True,False,24505,167,3.373
+HUM/2017/page_133.pdf-2,"what was the number of shares of stockholders of record on december 29 , 2017 in millions",137.5,Not specified,False,False,24187,128,2.809
+JPM/2013/page_209.pdf-3,"what were net trading assets from derivatives in 2012 , in millions?",9582.0,9582,True,False,24023,184,3.575
+JPM/2005/page_37.pdf-3,"without the asset & wealth management segment in 2015 , what would total operating income have been ",9305.0,9305,True,False,24414,201,3.824
+EW/2016/page_79.pdf-2,how much goodwill does the company have as a % (  % ) of current assets?,9.21352,920.64%,True,False,23915,200,3.947
+ZBH/2003/page_40.pdf-2,what was the difference in operating profit for europe as a percentage of net sales between 2001 and,6.8,6.8%,True,False,24565,156,3.993
+EW/2016/page_79.pdf-3,what is the current ratio?,-0.8541,0.85,False,False,23903,190,3.972
+DISH/2013/page_138.pdf-2,what is the tax expense related to discontinued operations in 2012?,25.0,99 million,False,False,23986,210,5.17
+UNP/2011/page_21.pdf-2,"for all of 2011 , approximately how much was spent on stock repurchases?",1473945024.8,1474 million,False,False,23745,162,3.003
+PM/2018/page_24.pdf-1,what is the roi of an investment in pmi from 2013 to 2014?,-0.021,-2.10%,True,False,23781,231,4.187
+ETR/2013/page_118.pdf-4,what are the lease obligations to entergy louisiana as a percentage of long-term debt maturities in ,0.38664,38.7%,True,False,24041,246,4.439
+APD/2016/page_39.pdf-2,"considering the years 2014-2016 , what is the lowest interest incurred observed?",148.4,148.4,True,False,24186,153,2.861
+AAP/2011/page_28.pdf-1,"what is the roi of an investment in advance auto parts from 2006 to january 3 , 2009?",-0.0274,-2.74%,True,False,23865,249,4.696
+C/2008/page_102.pdf-1,"at december 31 , 2008 what was the ratio of the tier 2 capital compared to 2007",0.94444,94.44%,True,False,24350,435,6.955
+IPG/2015/page_48.pdf-3,"what is the total difference , in millions , in 2015 between a 10% ( 10 % ) increase and 10% ( 10 % ",68.4,68.4,True,False,24223,210,3.745
+MRO/2011/page_73.pdf-4,how much was cost of good sold in 2009?,108.0,108,True,False,24101,205,3.724
+IP/2005/page_19.pdf-2,what was the change in industry segment operating profits between 2003 and 2004?,306.0,306 million,True,False,24347,154,3.004
+IPG/2015/page_37.pdf-1,what is the percentage increase from 2014-2015 in total cash flow data?,2.04524,0.672%,False,False,24119,219,4.341
+STT/2009/page_73.pdf-2,what is the amortized cost as a percent of the fair value of the securities in 2009?,1.02949,102.00%,False,False,23944,204,4.302
+MO/2012/page_44.pdf-1,what are the higher charges related to tobacco and health judgments as a percentage of the operating,0.73109,73.95%,False,False,24707,209,3.921
+MRO/2017/page_111.pdf-3,"what would end of year proven reserves be without the increase for extensions , discoveries , and ot",489.0,489,True,False,24114,229,4.415
+DRE/2007/page_59.pdf-1,what was the ratio of the debts to the assets in the purchase transaction,0.17792,17.1%,False,False,23981,226,4.542
+AMT/2005/page_85.pdf-2,what percentage of long-term financing was classified as current at the end of 2005?,0.04488,4.70%,False,False,23950,224,3.864
+CME/2017/page_97.pdf-2,in 2017 what was the percent of the common stock authorized that was issued and outstanding for the ,0.33924,33.92%,True,False,24090,203,4.124
+LMT/2005/page_40.pdf-1,what percent of total commitments expire in less than 1 year?,0.81703,81.7%,True,False,24411,203,4.503
+EW/2017/page_82.pdf-1,what percentage of the total purchase price net of cash acquired is goodwill?,0.77991,77.96%,True,False,24010,208,4.163
+CDNS/2012/page_30.pdf-3,what is the roi of nasdaq composite from 2008 to 2012?,0.1078,87.6%,False,False,23666,296,6.362
+ETR/2011/page_324.pdf-2,in december 2011 what was the ratio of the receivables to the credit facility outstanding,2368.3,-2.37,False,False,24263,203,4.818
+BLK/2014/page_119.pdf-2,what is the fair value of all notes due by 2019 ? in millions $ .,2672.0,2672,True,False,24921,215,3.707
+ETR/2002/page_86.pdf-2,in 2002 what was the ratio of the annual cash sinking fund requirements for debt outstanding that wa,1.71179,1.71,True,False,24052,223,3.835
+HII/2014/page_69.pdf-1,what portion of total backlog is related to ingalls segment?,0.49368,26.2%,False,False,24250,221,4.285
+BLL/2007/page_47.pdf-4,"what is the number of shares outstanding based on the cash dividends paid during 2006 , in millions?",102.5,102.5,True,False,24552,188,3.379
+MS/2017/page_74.pdf-1,what percentage of average common equity attribution in 2017 is made up of institutional securities?,0.57593,57.6%,True,False,24485,207,3.779
+STT/2011/page_83.pdf-2,what was the percentage change in the fair value from 2010 to 2011,0.21923,21.93%,True,False,24149,272,4.287
+ETFC/2014/page_26.pdf-3,what was the ratio of the s&p index to the e*trade financial corporation cumulative total return to ,1.48857,1.487,True,False,23505,228,4.735
+AMT/2010/page_34.pdf-3,"what is the average number of shares per registered holder as of february 11 , 2011?",858775.15119,"858,000",True,False,23768,161,3.31
+MS/2014/page_292.pdf-1,"for us federal purposes , how many years are currently involved in irs controversies?",9.0,5,False,False,24072,146,3.186
+ETFC/2014/page_26.pdf-1,what was the percent of the return on the e*trade financial corporation common stock from 2009 to 20,0.3781,37.81%,True,False,23492,244,6.097
+UNP/2011/page_21.pdf-1,for the 4th quarter of 2011 approximately how much was spent on stock repurchases?,384491911.05,384.73 million,False,False,23748,306,4.838
+ETR/2011/page_341.pdf-2,what was the percentage change in net revenue in 2011,555.3,Insufficient data to calculate percentage change for 2011.,False,False,23798,280,4.385
+C/2017/page_328.pdf-2,as of 2017 what was the ratio of the overall five-year cumulative total return for s&p 500 compared ,1.15615,1.075,False,False,23575,212,4.297
+JPM/2014/page_65.pdf-3,based o n the review of the simultaneous investments of the jpmorgan chase common stock in the vario,1.10015,1.1005,True,False,23737,192,3.356
+HIG/2008/page_318.pdf-2,what is the weight of the property&casualty operations relative to the total statutory capital?,0.43638,43.65%,True,False,24430,201,3.282
+APD/2014/page_39.pdf-2,what was the operating margin for 2012?,0.10617,10.61%,True,False,24323,187,3.98
+JPM/2008/page_85.pdf-2,what was jpmorgan chase & co's tier 2 capital ratio ( cet2 ) ratio in 2008?,0.03906,3.91%,True,False,24394,228,4.651
+GPN/2009/page_70.pdf-1,"what is the average yearly amortization expense related to contract-based intangible assets , ( in t",103.1,159,False,False,23912,266,6.247
+ADBE/2018/page_86.pdf-3,what is the percentage change in total gross amount of unrecognized tax benefits from 2016 to 2017?,-0.03065,-3.07%,True,False,24251,324,5.594
+JPM/2007/page_147.pdf-2,how much of the securitizations that hold asf framework loans were issued by third parties?,0.97945,19636,False,False,24136,127,4.568
+AON/2009/page_48.pdf-1,what was the percent of the change in the consulting segment revenue from 2008 2009\\n,-0.06563,-6.56%,True,False,24027,225,3.517
+ETR/2008/page_355.pdf-3,what is the net change in net revenue during 2008?,21.7,21.7 million,True,False,23839,147,3.552
+APD/2019/page_48.pdf-1,what is the average cash provided by the operating activities during 2018 and 2019?,2758.55,2758.55,True,False,24292,214,5.111
+MRO/2006/page_33.pdf-2,"in tpd , what were total matching buy/sell volumes in 2006 , 2005 and 2004?",172.0,"2006: 3,264 tpd, 2005: 10,472 tpd, 2004: 9,656 tpd",False,False,24408,393,6.209
+JPM/2007/page_33.pdf-2,what was the percentage change in investment banking fees from 2006 to 2007?,0.20199,20.19%,True,False,24503,233,4.561
+JPM/2013/page_209.pdf-1,in 2013 what was the net trading assets 2013 derivative receivables to the trading liabilities 2013 ,8076.0,1.125,False,False,24035,218,3.721
+ETR/2002/page_24.pdf-4,what is the percent change in operating revenues from 2001 to 2002?,1.91971,52.1%,False,False,23977,262,4.49
+EW/2016/page_94.pdf-3,what is the percentage difference in the fair value per share between 2015 and 2016?,0.70987,71.1%,True,False,24055,280,4.802
+C/2010/page_223.pdf-1,"at december 31 , 2010 what was the percent of the net allowance to the the carrying amount of the co",0.19643,16.43%,False,False,23887,197,3.452
+ABMD/2009/page_88.pdf-2,"what was the average payment per year for the state tax settlement , in millions?",56.0,0.168,False,False,24153,191,3.593
+AES/2017/page_157.pdf-4,what percentage was andes sbu of total revenue in 2017?,0.25736,25.7%,True,False,24320,204,3.772
+HII/2017/page_124.pdf-4,what is the combined number of equity compensation plans approved by security holders,4536446.0,448859,False,False,23831,111,2.649
+ETR/2013/page_118.pdf-3,what amount of long-term debt is due in the next 24 months for entergy corporation as of december 31,1495.939,1495.94,True,False,24048,248,4.159
+HOLX/2008/page_142.pdf-1,what portion of the purchasing price is dedicated to goodwill?,0.1853,18.51%,True,False,24004,205,3.81
+IPG/2008/page_93.pdf-3,what is the total percentage decrease in future contingent acquisition obligations payable in cash f,1.43416,4.29%,False,False,24219,251,5.206
+BLL/2007/page_47.pdf-3,"what is the number of shares outstanding based on the cash dividends paid during 2006 , in millions?",102.5,102.5,True,False,0,0,0.004
+HOLX/2012/page_113.pdf-1,what portion of the gen-probe's purchase price is paid in cash?,0.99891,99.89%,True,False,24285,223,5.415
+HUM/2017/page_133.pdf-3,what was the number of shares issued in 2015 in millions,149.12281,149.12,True,False,24179,233,3.925
+ETR/2008/page_249.pdf-2,what percentage of entergy's total employees are employed in entergy mississippi?,0.05645,5.64%,True,False,23643,187,4.159
+AON/2009/page_46.pdf-3,what was the percent of the change in the risk and insurance brokerage services segment revenue from,0.01743,1.74%,True,False,24089,230,4.272
+LKQ/2018/page_83.pdf-1,what is the change in the warranty reserve from 2017 to 2018?,111.0,111000,False,False,24165,166,3.266
+PM/2014/page_67.pdf-1,"what was the total of u.s . dollar notes issued in 2014 , in millions?",2000.0,2000,True,False,24751,167,3.779
+PM/2017/page_38.pdf-2,"what are the net earnings attributable to pmi in the previous year , ( in billions ) ?",6.95522,6.932,True,False,24156,200,3.614
+IPG/2008/page_93.pdf-1,what portion of the total estimated future contingent acquisition obligation is due in the 12 months,0.1931,19.7%,False,False,24215,269,4.903
+BLK/2013/page_125.pdf-1,what are the future minimum commitments under the operating leases in 2014 as a percentage of the to,0.10498,10.5%,True,False,24367,197,3.94
+AAP/2012/page_12.pdf-1,what is the growth rate in the number of stores during 2012?,0.03353,3.35%,True,False,24071,327,5.928
+CDNS/2006/page_30.pdf-3,what is the rate of return of an investment in cadence design systems inc from 2001 to 2004?,-0.1848,-18.48%,True,False,23762,293,5.21
+EW/2016/page_94.pdf-4,what is the percent change in the fair value per share between 2014 and 2016?,1.6383,163.83%,True,False,24055,280,5.412
+VLO/2018/page_25.pdf-2,as of december 2018 what was the percent of the 2018 program still outstanding,0.88,88%,True,False,24014,238,4.194
+APD/2014/page_44.pdf-2,"considering the year 2012 , how bigger is the capital expenditures on a non-gaap basis than the one ",0.08536,8.55%,True,False,24436,247,3.976
+CME/2012/page_70.pdf-1,what is the percent of available potential to increase the multi-currency line of credit,0.4,40%,True,False,25097,157,3.16
+BLK/2017/page_122.pdf-2,what percent of the commitments will be due after 2022?,0.71623,71.7%,True,False,24804,204,3.847
+INTC/2013/page_29.pdf-4,of the square feet in the us what was the percent of the owned facility of the us total,0.92857,92.76%,True,False,23799,206,3.799
+ETR/2011/page_324.pdf-1,"what amount of credit facility was paid by entergy louisiana prior to december 31 , 2011 , ( in mill",150.0,150,True,False,24270,150,3.382
+APD/2019/page_31.pdf-1,"considering the year 2019 , what is the contribution of the first quarter in the total dividend?",0.24017,24.0%,True,False,23634,203,3.789
+PNC/2013/page_62.pdf-1,in 2013 what was the change in total residential mortgages in millions?,-864.0,-864,True,False,24340,178,4.072
+KHC/2016/page_23.pdf-2,"as of december 31 , 2016 , what percentage of manufacturing and processing facilities are leased?",0.04598,4.60%,True,False,24017,195,3.878
+BLL/2007/page_35.pdf-3,"what is the total amount of cash outflow used for shares repurchased during november 2007 , in milli",20.74359,20.75,True,False,24042,200,4.756
+CB/2010/page_200.pdf-1,what is the net change in amount of statutory capital and surplus for bermuda subsidiaries in 2010?,2634.0,2634,True,False,24164,188,3.823
+MRO/2011/page_73.pdf-2,how much was cost of good sold in 2009?,108.0,108,True,False,0,0,0.005
+UNP/2009/page_65.pdf-2,"how many options were issued under the 2001 plan as of december 31 , 2009?",20633770.0,"3,366,230",False,False,24190,83,2.533
+ETFC/2007/page_126.pdf-1,what percentage of total future principal payments of corporate debt are due in 2011?,0.13153,13.14%,True,False,23783,210,4.133
+AES/2017/page_175.pdf-3,what was the percentage change in revenues from 2016 to 2017 for transactions with related parties?,0.17909,17.91%,True,False,24145,228,3.607
+BLL/2007/page_47.pdf-1,payments to participants in the unfunded german plans are expected to be total approximately how muc,104.0,130,False,False,24563,127,3.152
+MA/2008/page_126.pdf-1,what is the percentage change in total liabilities for litigation settlements from 2006 to 2007?,-0.15197,-15.19%,True,False,24030,282,6.616
+AWK/2013/page_132.pdf-2,what is the one-percentage-point increase of effect on total of service and interest cost components,0.10198,10.19%,True,False,23625,232,4.8
+MRO/2007/page_134.pdf-1,by how much did the weighted average exercise price per share increase from 2005 to 2007?,1.42403,35.80,False,False,24393,167,3.742
+INTC/2013/page_29.pdf-2,"what percentage of major facilities by square footage are leased as of december 28 , 2013?",0.15118,15.09%,True,False,23799,226,3.85
+MAS/2018/page_35.pdf-1,what was the difference in operating profit margins as adjusted between 2016 and 2017?,0.006,0.6%,True,False,24194,148,3.421
+PPG/2013/page_40.pdf-1,does the company spend more on advertising in 2013 than on research and development?,no,no,True,False,24293,132,2.944
+ETR/2015/page_131.pdf-4,what was the sum of the value of the notes entergy issued to nypa with seven and eight annual instal,143.0,916,False,False,24078,164,3.202
+VNO/2012/page_84.pdf-2,what was the total five year change in the s&p 500 index?,9.0,9,True,False,23513,181,3.737
+VTR/2007/page_47.pdf-3,"based on the given average price per share , how much money did the repurchases cost in 2007?",643822.41,645196.41,True,False,23760,158,3.358
+UPS/2006/page_32.pdf-2,what was the difference in percentage total cumulative return on investment for united parcel servic,0.139,13.90%,True,False,23774,328,6.654
+HII/2017/page_124.pdf-2,what portion of the equity compensation plan approved by security holders remains available for futu,0.90105,90.2%,True,False,23834,264,4.085
+VRTX/2003/page_71.pdf-2,what percent of the total common stock plans are related to the vertex 401 ( k ) plan?,0.00563,0.563%,True,False,24069,211,3.887
+GS/2016/page_77.pdf-4,what percentage of total net revenue investing & lending segment is due to equity securities in 2015,0.69555,69.5%,True,False,24375,219,4.343
+AES/2003/page_52.pdf-2,for the three months ended december 2003 what were the total sales proceeds for subsidiaries assets ,396.0,295,False,False,24093,139,3.014
+MAS/2012/page_70.pdf-2,what percentage of net goodwill at december 31 2011 is comprised of,0.09572,"Cabinets and related products: 9.57%, Plumbing products: 10.63%, Installation and other services: 55.25%, Decorative architectural products: 11.59%, Other specialty products: 13.00%",False,False,24319,537,8.062
+AON/2011/page_134.pdf-2,in 2011 what was the percent of risk solutions revenues to the total revenues of aons,0.60397,60.5%,True,False,23895,204,3.676
+HII/2014/page_69.pdf-3,what is the anticipated amount of revenues from the of the $ 21 billion total backlog as of december,5.88,5.88,True,False,24277,168,3.164
+DRE/2009/page_56.pdf-1,what was the percent of the decline in net income ( loss ) attributable to common shareholders from ,-0.76216,76.2%,False,False,24332,308,4.775
+RCL/2014/page_17.pdf-2,in 2010 what was the percentage of the global cruise guests from the european cruise,0.29468,29.47%,True,False,24324,224,4.925
+AAL/2015/page_118.pdf-3,what were total operating expenses in 2013?,38152.0,38152,True,False,24010,154,2.966
+LMT/2015/page_56.pdf-2,what was average net sales for space systems in millions from 2013 to 2015?,9198.33333,9198.33,True,False,0,0,0.006
+PM/2015/page_127.pdf-3,what was the average total accumulated other comprehensive losses from 2013 to 2015 in millions?,-6806.0,-6806,True,False,24056,229,5.492
+LMT/2012/page_47.pdf-4,what was the average operating profit of the space results from 2010 to 2012,526.5,1058.67,False,False,24211,211,4.883
+AAPL/2005/page_83.pdf-1,what was the average effective tax rate for the three year period?,0.26667,26.67%,True,False,23938,223,4.28
+PM/2014/page_67.pdf-3,what is the exchange rate per dollar used to convert the face value of the euro notes with the matur,0.72886,0.728,True,False,24759,203,3.407
+ETR/2013/page_118.pdf-2,what amount of long-term debt is due in the next 36 months for entergy corporation as of december 31,1766.791,1495.94,False,False,24048,269,4.547
+HOLX/2007/page_128.pdf-2,what portion of the estimated purchase price of r2 is paid in cash?,0.03128,3.13%,True,False,23963,220,3.717
+GIS/2019/page_37.pdf-1,what portion of the total long-term obligations are incurred from long-term debt?,0.73012,73.0%,True,False,24253,204,4.093
+IPG/2009/page_85.pdf-1,what was the mathematical range for the postretirement benefit plans?,19.3,19.3 million,True,False,24291,266,3.987
+RE/2017/page_159.pdf-4,what is the percentage change in the balance of the prudential insurance company of america from 201,-0.01289,-1.29%,True,False,24012,280,4.484
+JPM/2018/page_110.pdf-3,in 2017 what was the ratio of the htm investment securities ( period-end ) compared to investment se,0.19249,0.192,True,False,24702,197,3.26
+MRO/2009/page_139.pdf-4,"what was the change in receivables for recoverable costs from certain states , under programs to ass",-1.0,-1,True,False,24227,156,2.759
+UNP/2014/page_35.pdf-2,what was the cost per car for the buyout of locomotives in 2012?,454545.45455,454545.45,True,False,23864,213,3.089
+RSG/2017/page_142.pdf-1,as part of the employee stock purchase plan what was the percent of the decline in issuance under th,-0.1241,12.41%,False,False,24022,281,5.074
+C/2008/page_211.pdf-3,what was the percentage of carrying amount reported on the consolidated balance sheet trading assets,-0.37533,-37.5%,True,False,24638,307,4.864
+AES/2002/page_46.pdf-3,what was the difference in dollars of the high low sale price for the common stock in the third quar,3.05,3.05,True,False,23722,152,3.018
+UPS/2006/page_32.pdf-3,for the five years ended 12/31/2006 what is the performance difference of the class b common stock o,13.9,13.90%,True,False,23775,376,5.032
+NWS/2016/page_61.pdf-1,what on the net interest reduction of 13 million or 23% ( 23 % ) compared to 2015 what was the inter,69.52174,43.52,False,False,24213,243,3.345
+JPM/2014/page_65.pdf-2,what is the total return of the kbw bank index over the above refernced five year period?,0.8969,89.69%,True,False,23713,257,4.114
+APD/2016/page_39.pdf-1,"considering the years 2014-2016 , what is the highest interest expense observed?",125.1,125.1 million,True,False,24186,154,7.727
+IPG/2008/page_93.pdf-2,what is the percentage change in the amount of guarantees from parent company from 2007 to 2008?,-0.21828,-21.8%,True,False,24219,282,5.92
+AMT/2004/page_81.pdf-3,what is the percentage change in amortization expense from from 2007 to 2008?,0.04239,-1.63%,False,False,24107,257,4.077
+AES/2016/page_185.pdf-3,"as of december 31 , 2015 , what was the maximum premium on the dp&l preferred stock?",0.03,3,False,False,24359,196,3.181
+ETR/2015/page_131.pdf-2,what was the sum of the annual long-term debt maturities due in five years,4192989.0,4190989,True,False,24068,255,3.674
+IPG/2008/page_21.pdf-1,"how much more , in percent , was spent on october shares than november shares?",1229.08971,1120.5%,False,False,23611,338,5.927
+GS/2017/page_106.pdf-1,"in millions , what was the change in the estimated sensitivity to a one basis point increase in cred",10.0,10,True,False,24144,146,3.265
+STT/2011/page_83.pdf-3,what is the percent change in fair value between 2010 and 2011?,0.21923,21.93%,True,False,24148,272,4.594
+APD/2019/page_31.pdf-2,"what is the increase observed in the first quarter dividend percentage concerning the total value , ",0.01665,15.79%,False,False,23638,264,4.312
+LMT/2015/page_54.pdf-1,what were average net sales for mfc from 2013 to 2015 in millions?,6885.66667,6885.67,True,False,24296,218,4.181
+MRO/2008/page_69.pdf-2,"what was the change in wti crude oil ( dollars per barrel ) between july 3 and december 19 , 2008?",111.42,111.42,True,False,24338,173,2.818
+JPM/2013/page_209.pdf-2,"in millions for 2013 , what were net trading assets 2013 debt and equity instruments?",262743.0,262743,True,False,24028,191,3.377
+AON/2010/page_115.pdf-3,what was the percentage change in the expenses related to he issuing of stock option in 2009,0.05742,-12.5%,False,False,24048,227,4.817
+AMT/2005/page_105.pdf-4,what portion of total value of net operating loss carryforwards is related to state?,0.52847,52.8%,True,False,24093,245,4.248
+IPG/2015/page_37.pdf-2,what is the net change in cash in 2015?,-1.6,-1.6 million,True,False,24113,275,4.4
+LMT/2013/page_74.pdf-3,what was the change in the weighted average common shares outstanding for diluted computations from ,-11.5,-11.5,True,False,24224,168,3.351
+PM/2017/page_38.pdf-4,what was the percentage change in operating income from 2016 to 2017?,0.06362,6.36%,True,False,24154,229,4.004
+RCL/2014/page_17.pdf-1,what is the mathematical range for european cruise guests from 2010-2014?,995365.0,995365,True,False,24323,252,6.137
+UNP/2011/page_76.pdf-1,"assuming 2010 accrued casualty costs were completely repaired in the following year , ,what would th",2525.0,325,False,False,24049,225,4.25
+LMT/2006/page_90.pdf-4,"what percentage of future minimum lease commitments at december 31 , 2006 for all operating leases t",0.23091,22.19%,False,False,24197,290,5.962
+AES/2016/page_185.pdf-2,what was the change in millions of ipalco common stock from 2015 to 2016?,158.0,158,True,False,24357,146,3.099
+TSCO/2018/page_34.pdf-2,what was the percentage growth of the stock price performance from 2013 to 2014 for the tractor supp,0.0411,4.11%,True,False,23653,241,4.331
+ABMD/2004/page_26.pdf-1,"for the facility leases that have remaining terms through fiscal 2010 , assuming the annual rent is ",4926000.0,3778000,False,False,24132,232,4.844
+AES/2017/page_175.pdf-2,"for 2017 , what was net interest expense with related parties , in millions?",-28.0,28,False,False,24141,157,3.42
+LMT/2016/page_48.pdf-4,what were average operating profit for aeronautics in millions between 2014 and 2016?,1739.0,1739,True,False,24327,215,3.908
+HOLX/2007/page_128.pdf-1,what is the fair value of hologic common stock used for acquiring r2?,46.70455,205500,False,False,23964,173,3.249
+PNC/2011/page_78.pdf-1,"for december 31 , 2011 and december 31 , 2010 , what was the average unpaid principal balance outsta",13.1,13.1,True,False,24331,227,6.163
+GS/2014/page_136.pdf-2,"in millions in 2014 2013 and 2012 , what were the lowest amount of interest rate hedges?\\n\\n",-8683.0,-8683,True,False,23974,125,2.913
+DISCA/2012/page_39.pdf-4,what is the implied total value of the european sports satellite and cable network as of the transac,1320.0,1320 million,True,False,24139,180,4.406
+LMT/2015/page_54.pdf-3,in 2015 what was the ratio of the net sales to the backlog,0.43677,0.44,False,False,24293,177,4.801
+LMT/2015/page_99.pdf-2,what was the percentage change in total long-term debt net from 2014 to 2015?,1.4847,148.5%,True,False,24504,291,6.193
+C/2008/page_211.pdf-1,what was the change in millions of carrying amount reported on the consolidated balance sheet tradin,-9766.0,-9766,True,False,24640,202,3.819
+LMT/2010/page_42.pdf-4,"what was the percentage change in capital expenditures for property , plant and equipment from 2008 ",-0.07991,-7.99%,True,False,24501,271,5.002
+ETFC/2011/page_82.pdf-2,"what percentage of total goodwill is attributable to u.s . brokerage reporting unit as december 31 ,",0.90539,90.5%,True,False,23695,226,8.386
+AON/2010/page_115.pdf-1,what was the average total stock-based compensation expense from 2008 to 2010 in millions,329.5,218.67,False,False,24048,208,4.291
+PNC/2009/page_41.pdf-1,recognized net gains of $ 107 million in 2009 on the valuation and sale of commercial mortgage loans,0.10573,10.57%,True,False,24372,206,4.07
+MRO/2011/page_73.pdf-1,for the sale of the 19 percent outside-operated interest in the corrib natural gas development offsh,235.0,235,True,False,24119,137,2.754
+UNP/2013/page_54.pdf-1,as of december 312012 what was the percent of the total total freight revenues from agriculture,0.16662,16.66%,True,False,24099,194,3.883
+JKHY/2014/page_30.pdf-2,what was the change in the annual performance of the jkhy stock from 2009 to 2010,0.1685,16.85%,True,False,23847,284,5.205
+L/2015/page_59.pdf-2,what is the roi of an investment in loews common stock from 2010 to 2012?,0.0604,6.04%,True,False,23694,254,5.311
+ABMD/2007/page_52.pdf-2,how much of the total contractual commitments are current?,0.59482,"8,381",False,False,24225,136,2.85
+LMT/2015/page_99.pdf-4,in november 2015 what was the percent of the discounts and debt issuance costs to the long-term debt,0.01429,1.43%,True,False,24513,305,6.131
+PKG/2009/page_65.pdf-1,purchase commitments ( in thousands ) totaled what for 2010 and 2011?,12893.0,12893,True,False,23892,157,3.262
+UPS/2006/page_32.pdf-1,what was the percentage total cumulative return on investment for united parcel service inc . for th,0.4892,48.92%,True,False,23764,252,4.641
+HII/2017/page_104.pdf-1,what is the percentage change in the unamortized debt issuance costs associated with the senior note,-0.21053,-21.05%,True,False,24405,245,4.543
+CDNS/2006/page_30.pdf-4,what was the difference in percentage cumulative 5-year total return to shareholders of cadence desi,-0.5507,55.07%,False,False,23784,357,6.123
+ABMD/2004/page_26.pdf-2,total future minimum lease payments due after 5 years are what percent of the total remaining?,0.15465,15.5%,True,False,24117,216,4.819
+ADI/2011/page_50.pdf-2,what is the yearly interest expense incurred from the $ 375 million note with a fixed rate?,11.25,18.75 million,False,False,24274,164,3.17
+UNP/2014/page_25.pdf-2,"if overall freight revenues in 2014 grow as the same rate as agricultural arc growth , what would pr",22560.05,24588,False,False,24016,269,4.748
+ADI/2011/page_81.pdf-2,what is the net change in the total investment from 2010 to 2011?,17720.0,17720,True,False,24065,156,3.201
+AWK/2013/page_132.pdf-3,what is the one-percentage-point increase of effect on total of service and interest cost components,0.10198,10.19%,True,False,0,0,0.005
+UNP/2008/page_79.pdf-1,what was the percent of the value of the interest retained by upri from 2007 to 2008 was $ 431 milli,-0.08493,-8.49%,True,False,24201,260,5.11
+AAL/2013/page_15.pdf-3,what is the ratio of the total flight attendants to passenger service personnel,1.08297,1.08,True,False,23658,222,3.766
+AMT/2012/page_125.pdf-1,"for the mtn group acquisition , what was the cost per tower ? .",180041.58004,180000,True,False,23951,167,3.788
+EW/2016/page_79.pdf-1,what percentage of the total cash purchase price net of cash acquired was represented by goodwill?,0.80881,80.9%,True,False,23914,214,3.873
+PM/2015/page_85.pdf-2,"what was the change in billions of total debt from december 31 , 2014 to 2015?",-1.0,-1.0,True,False,25129,198,4.386
+AAL/2013/page_15.pdf-2,what portion of the total full-time employees of american are flight attendants?,0.24958,24.96%,True,False,23658,214,3.983
+MRO/2011/page_73.pdf-3,what is the percentage of pretax income from discontinued operations to total revenues from disconti,0.42553,42.55%,True,False,24107,193,4.637
+ETR/2004/page_213.pdf-1,what is the increase in other regulatory credits as a percentage of net revenue in 2003?,0.03851,3.85%,True,False,23864,330,8.231
+PNC/2009/page_41.pdf-2,what was the percentage gain recognized on the commercial mortgages held for sale in 2009,19.81481,35.67%,False,False,24349,227,4.27
+BKR/2017/page_103.pdf-1,what is the expense which relates to the acceleration of equity awards upon termination of employmen,0.40541,40.54%,True,False,24045,192,12.613
+AMT/2010/page_34.pdf-4,for the quarter ended september 302010 what was the percentage change in the share price from the hi,0.19245,19.24%,True,False,23771,292,5.611
+GS/2012/page_165.pdf-1,what percentage of total other assets in 2012 was comprised of goodwill and identifiable intangible ,0.12869,12.87%,True,False,24025,211,4.314
+BLL/2010/page_28.pdf-2,did the five year total return on ball corporation outperform the dj containers & packaging index?,yes,yes,True,False,24018,327,6.693
+AON/2011/page_134.pdf-4,what is the increase observed in the total revenue during 2010 and 2011?,0.32601,2775,False,False,23893,154,2.944
+ETR/2016/page_418.pdf-4,"what is the growth rate in net revenue in 2016 for entergy texas , inc.?",0.01099,1.10%,True,False,23748,278,4.525
+GS/2016/page_70.pdf-1,what is the net change in the number of staff in 2016?,-2400.0,-2400,True,False,24339,152,3.177
+TSCO/2018/page_34.pdf-1,"how much of a greater return , in percentage , was gained in the s&p retail index compared to the tr",0.9983,99.83%,True,False,23654,416,7.143
+JPM/2007/page_157.pdf-2,what was the difference in total additions between 2006 and 2007 in millions?,994.0,994,True,False,24718,135,2.359
+GS/2016/page_70.pdf-2,what is the net change in the number of staff in 2015?,2800.0,2800,True,False,24339,163,3.189
+UA/2015/page_71.pdf-2,what was the ratio of the acquisition related costs recognized in 2015 to 2014,0.75,7.875,False,False,23865,215,14.85
+RE/2015/page_33.pdf-2,what is the percentage change in average of investments from 2014 to 2015?,0.03558,3.56%,True,False,24560,290,6.07
+V/2008/page_17.pdf-2,what is the average payment volume per transaction for jcb?,91.66667,91.67,True,False,24045,171,3.792
+AON/2009/page_48.pdf-2,what is the lowest segment operating income margin?,0.134,13.4%,True,False,24014,148,3.463
+DRE/2002/page_40.pdf-2,what is the percent change in quarterly cash dividend for the period ended march 31 2002 to the peri,1.11111,1.11%,True,False,23602,278,13.506
+APD/2016/page_96.pdf-2,"considering the year 2016 , what is the short-term debt as a percent of total debt?",0.20997,15.04%,False,False,23527,219,4.179
+SLB/2012/page_44.pdf-2,by how much did the average price per share increase from 2010 to 2011?,0.25853,16.67,False,False,0,0,0.005
+UNP/2013/page_44.pdf-1,in 2013 what was the percentage of the sites closed down,0.21269,20.07%,False,False,24176,197,11.421
+DVN/2014/page_85.pdf-2,"in 2014 , what percentage of the total amortization amount was from intangibles?",80.0,16.07%,False,False,23629,326,4.918
+APD/2014/page_39.pdf-1,what was the operating margin for 2014?,0.19583,19.6%,True,False,24323,182,4.287
+JPM/2007/page_157.pdf-1,what was the percentage change in the fair value of msrs in 2007?,8632.0,14.39%,False,False,24717,287,5.261
+CAT/2017/page_85.pdf-1,how many countries are cat products distributed to?,193.0,192,False,False,24357,170,3.001
+DISCA/2012/page_39.pdf-3,what were 2012 total consolidated revenues in millions?,5250.0,4420,False,False,24130,161,3.271
+AOS/2004/page_11.pdf-1,what percentage of total aggregate contractual obligations is due to long-term debt?,0.52772,52.7%,True,False,24465,195,3.54
+AON/2011/page_134.pdf-3,what is the highest value for total operating segments during this period?,11287.0,11287,True,False,23888,112,2.973
+RE/2015/page_33.pdf-4,"at december 31 , what was the percentage change in investment income from 2011 to 2012",-0.03194,-3.19%,True,False,24564,280,4.705
+JPM/2007/page_33.pdf-1,what was the percentage change in investment banking fees from 2005 to 2006?,0.35029,35.0%,True,False,24503,232,7.541
+IPG/2015/page_48.pdf-1,what percent decrease for interest income occurred between 2014 and 2015?,16.78832,16.79%,True,False,24201,273,5.004
+PNC/2015/page_159.pdf-1,"at december 31 , 2015 what was the net change from december 31 , 2014 on alll on total purchased imp",-0.6,-0.308,False,False,23772,229,4.119
+ETR/2016/page_418.pdf-1,"in millions , what is the total impact on the change in net revenue from the reserve equalization , ",33.7,33.7,True,False,23758,172,3.46
+AAPL/2005/page_83.pdf-2,"what was the lowest amount of research and development credit net in the three year period , in mill",-26.0,-26,True,False,23945,138,3.068
+MRO/2009/page_139.pdf-3,by how much did contingent rental liability decrease from 2007 to 2009?,-0.42424,14 million,False,False,24198,147,3.173
+APD/2018/page_59.pdf-2,what is the percentual increase in the operating expenses during 2017 and 2018?,0.275,27.5%,True,False,24259,245,4.468
+LLY/2018/page_63.pdf-2,what was the percentage change in raw materials and supplies between 2017 and 2018?,0.03621,3.61%,True,False,23963,277,4.55
+LMT/2015/page_99.pdf-1,what was the change in the total long-term debt net from 2014 to 2015 in millions,9119.0,9119,True,False,24506,167,3.166
+CME/2017/page_97.pdf-3,how many directors can be elected by the class b-1 and class b-2 shareholders?,5.0,5,True,False,24084,123,2.699
+MRO/2009/page_56.pdf-1,by what percentage did the average wti crude oil benchmark decrease from 2007 to 2009?,-0.14252,14.26%,False,False,24277,284,5.114
+IPG/2008/page_62.pdf-3,"what is the change in the balance of liability for restructuring 2003 program from 2006 to 2008 , ( ",-6.9,-6.9,True,False,23766,197,3.596
+EW/2016/page_94.pdf-1,"what is the value , in millions of dollars , of the total issuable stock in 2014?",162.15,162.15,True,False,24056,217,3.714
+CB/2010/page_88.pdf-1,what was the percentage change of the net favorable prior period development from 2010 to 2008,-0.38206,-38.2%,True,False,24471,256,4.361
+MRO/2004/page_36.pdf-1,"what was the change in ssa 2019s revenues from the sale of non-petroleum merchandise in 2004 , compa",0.1,0.1,True,False,24290,172,11.714
+GPN/2017/page_77.pdf-2,what portion of the total purchase consideration is allocated to goodwill?,0.76632,76.6%,True,False,23937,199,3.441
+APD/2013/page_40.pdf-1,"considering the years 2011-2013 , what is the average capital expenditure on a gaap basis?",1891.16667,1891.17,True,False,24466,243,4.208
+GS/2013/page_152.pdf-3,"in millions , for 2013 , 2012 , and 2011 , what was average currency hedges?",25.66667,25.67,True,False,24084,201,4.099
+VTR/2007/page_47.pdf-2,"what was the number of shares outstanding as of december 31 , 2007",138297141.0,138311810,True,False,23755,115,2.421
+AMAT/2013/page_18.pdf-1,what is percentage change in rd&e spendings from 2013 to 2014?,0.08333,Data for 2014 RD&E spending is not provided; unable to calculate percentage change.,False,False,24206,174,3.369
+ETR/2011/page_376.pdf-2,what percent of of the total variance in net revenue is attributed to the variance in volume/weather,0.56649,56.64%,True,False,23761,296,5.84
+HII/2017/page_124.pdf-3,in the number of securities to be issued what is the ratio of the stock rights from the 2012 plan to,1.06047,1.06,True,False,23850,217,5.912
+INTC/2013/page_33.pdf-1,what was the percent of the change in the net revenues from dec . 282012 dec . 29 2013,-0.01187,-74.05%,False,False,24345,306,6.948
+ETR/2013/page_118.pdf-1,what is the percent change in annual long-term debt maturities from 2016 to 2017?,1.83107,183.3%,True,False,24038,276,5.624
+BLK/2012/page_160.pdf-2,what percent of the balance increase is attributed to balances assumed in acquisitions?,0.13445,21.82%,False,False,24506,279,5.301
+BDX/2018/page_82.pdf-2,in 2018 what was the ratio of the service cost to the interest cost,0.66176,1.51,False,False,23729,167,3.599
+FIS/2007/page_94.pdf-3,what is the percentage change in rent expense from 2006 yo 2007?,0.30552,30.56%,True,False,23960,272,6.319
+MA/2008/page_126.pdf-2,what is the net change in total liabilities for litigation settlements during 2008?,1331862.0,1331862,True,False,24026,226,4.281
+AES/2016/page_185.pdf-1,"for the ipl cumulative preferred stock , what was the dividend rate at december 31 , 2016 and 2015?",0.05,5%,True,False,24362,207,4.989
+OKE/2012/page_52.pdf-1,what percentage of employees are subject to collective bargaining agreements?,0.14509,14.5%,True,False,24066,180,3.259
+ETFC/2011/page_82.pdf-4,as of december 312011 what was the ratio of the good will reported in the capital markets to the ret,3.50739,3.51,True,False,23696,177,3.773
+LKQ/2016/page_26.pdf-2,what was the difference in percentage cumulative return for lkq corporation and the s&p 500 index fo,0.26,26%,True,False,23612,359,7.561
+ETR/2011/page_324.pdf-3,what was the average entergy louisiana receivables from 2008 to 2011 in millions,-16402.0,11.38,False,False,24265,306,6.448
+ETR/2008/page_355.pdf-4,what is the percent change in gas customers between 2007 and 2008?,0.0814,8.14%,True,False,23843,264,15.554
+INTC/2013/page_33.pdf-3,what was the percentage change in diluted earnings per common share december 29 2012 and december 28,-0.11268,-11.28%,True,False,24345,317,5.804
+UNP/2014/page_35.pdf-1,what would 2014 capital expenditures have been without the early buyout of the operating lease of th,4510.0,3988,False,False,23870,191,3.574
+HII/2014/page_69.pdf-4,what is the percent of the total backlog for ingalls as part of the total backlog,0.49368,34.98%,False,False,24256,216,3.664
+IP/2009/page_37.pdf-1,north american consumer packaging net sales where what percentage of consumer packaging sales in 200,0.71895,71.9%,True,False,24382,218,3.774
+PM/2018/page_31.pdf-1,by what percentage will the 2019 pre-tax pension and postretirement expense be higher than that of 2,0.28125,28.13%,True,False,24394,278,6.031
+JPM/2014/page_65.pdf-4,did jpmorgan chase outperform the s&p 500 over the five year period?,no,no,True,False,23709,277,6.327
+SWKS/2006/page_81.pdf-1,what are the total pension liability adjustment from 2004 to 2006?,187.0,187000,False,False,24230,294,4.498
+IP/2005/page_19.pdf-1,what was the change in industry segment operating profits between 2004 and 2005?,-117.0,-117 million,True,False,24347,175,3.154
+PNC/2013/page_112.pdf-1,"in these equity investment balances , what is the percent of unfunded commitments at december 31 , 2",0.07521,7.51%,True,False,24332,208,3.461
+KHC/2016/page_23.pdf-4,"as of december 31 , 2016 , what percentage of manufacturing and processing facilities are owned?",0.95402,95.89%,False,False,24017,184,3.362
+UNP/2015/page_35.pdf-1,in 2014 what was the ratio of the cash used for investment to the cash from operations,0.49905,0.575,False,False,23922,202,3.514
+AMT/2008/page_32.pdf-4,what is the growth rate in the price of shares from the highest value during the quarter ended decem,0.2922,-22.65%,False,False,23953,324,5.568
+PKG/2009/page_65.pdf-3,what was the change in millions from 2008 to 2009 under purchase commitments?,7.9,7.9,True,False,23893,188,3.187
+PNC/2011/page_78.pdf-4,what was the total of the reserve for losses?,101.0,47 million,False,False,24303,118,2.214
+PM/2018/page_31.pdf-2,what is the percentage change in weighted average discount rate for postretirement plans from 2017 t,0.04749,4.75%,True,False,24393,283,4.838
+IPG/2008/page_62.pdf-4,what is the percentage decrease in total liability from dec 31 2007 to dec 31 2008?,56.75676,56.76%,True,False,23760,264,4.44
+TSCO/2017/page_31.pdf-2,"compared to the s&p 500 ,what was the difference in percentage growth from the s&p 500 retail index ",0.7446,74.46%,True,False,23654,374,5.312
+APD/2016/page_96.pdf-1,"considering the years 2014-2016 , what was the average cash paid for interest?",117.0,117.0,True,False,23526,234,5.406
+BLL/2007/page_47.pdf-2,"as of december 2007 , what percentage of the long-term debt is current?",0.05476,5.48%,True,False,24548,239,3.822
+UNP/2014/page_25.pdf-1,if the fuel surcharge grows by the same rate as in 2014what would expected 2015 revenues be in billi,3.01538,25.43,False,False,24012,412,7.125
+RSG/2009/page_100.pdf-1,in 2009 what was the change in the allowance for doubtful accounts,-10.5,-10.5 million,True,False,24026,165,4.057
+PNC/2011/page_87.pdf-2,"what is the average , in millions , home equity line of credit with balloon payments with draw perio",151.2,151.2,True,False,24358,239,4.793
+AES/2001/page_44.pdf-2,2001 revenue from large utilities were how many times the revenues from the growth distribution segm,2.49662,2.5,True,False,24325,192,3.874
+FBHS/2017/page_43.pdf-1,what was the percentage growth in the defined benefit plan income from 2016 to 2017,0.44828,44.83%,True,False,23946,235,4.361
+MSI/2006/page_61.pdf-2,how much did the lease obligations drop from 2004 to 2011?,85.0,Insufficient data to determine the drop in lease obligations from 2004 to 2011.,False,False,24369,179,3.286
+BLK/2013/page_124.pdf-1,how much higher is the fair value than carrying value ? in millions $ .,345.0,345,True,False,25030,130,2.54
+SNA/2012/page_33.pdf-2,what is the roi of s&p 500 from 2007 to 2012?,0.0859,8.59%,True,False,23729,247,6.332
+LMT/2016/page_48.pdf-1,what were average net sales for aeronautics in millions between 2014 and 2016?,16086.33333,16086.33,True,False,24327,254,7.05
+TROW/2010/page_22.pdf-3,by what percent did the provision for income taxes as a percentage of pretax income decrease between,1.3,3.39%,False,False,24376,262,5.487
+AAPL/2014/page_38.pdf-4,what was the change in property plant and equipment net from 2012 to 2013 in millions?,1145.0,1145,True,False,24198,192,6.171
+AES/2017/page_157.pdf-3,"without the us , what would the total net revenue be for 2017?",7301000000.0,7301,False,False,24321,209,4.134
+FIS/2007/page_91.pdf-1,what is the net change in unrecognized tax benefits during 2007?,11918.0,11918,True,False,24137,196,3.459
+CNP/2010/page_31.pdf-1,"considering the state of arkansas , what is the percentage of residential customers concerning the t",0.89051,89.00%,True,False,24197,175,3.085
+UNP/2009/page_65.pdf-1,"assuming a fmv of a share equal to 2000 , under the pre-december 31 , 2007 plan , approximately how ",90.0,90,True,False,24208,195,4.929
+AON/2010/page_115.pdf-2,what is the percentage increase in rsus from 2009 to 2010?,0.1129,11.29%,True,False,24045,222,5.892
+ETR/2008/page_377.pdf-1,"what is the growth rate in net revenue for entergy texas , inc . in 2007?",0.0967,9.66%,True,False,23958,278,5.123
+TROW/2010/page_22.pdf-1,what was the percent change in capital gain distributions between 2008 and 2009?,-0.48214,-64.29%,False,False,24368,232,5.195
+MRO/2015/page_18.pdf-4,"in 2017 , what percentage of undeveloped acres were located in africa?",0.98037,98.04%,True,False,23613,212,7.867
+ETR/2011/page_376.pdf-1,what was the average net revenue from 2010 to 2011,560.0,559.0 million,True,False,23757,204,3.764
+ETR/2017/page_316.pdf-4,how much higher is net revenue in 2017 than 2016 ? ( in millions ),2.1,2.1,True,False,23743,191,3.678
+CAG/2008/page_75.pdf-2,what percentage of total inventories is comprised of finished goods in 2008?,0.61046,61.0%,True,False,23765,192,4.074
+AES/2002/page_46.pdf-1,was the 2002 first quarter variance in high & low stock prices greater than the 2001 first quarter v,no,no,True,False,23721,238,5.514
+LMT/2016/page_48.pdf-3,what was the profit margin in 2014 for the aeronautics business segment,0.11052,11.1%,True,False,24324,207,4.907
+RE/2017/page_159.pdf-3,what was the estimated total cost to replace the annuities the company was liable for in 2017,179062.0,179062,True,False,24009,186,3.553
+BDX/2018/page_82.pdf-1,what was the average pension service cost from 2016 to 2018 in millions,109.0,109,True,False,23730,182,3.48
+CB/2010/page_88.pdf-2,what was the average catastrophe losses from 2008 to 2010 in millions,356.66667,356.67,True,False,24467,208,4.269
+AON/2014/page_47.pdf-2,"considering the years 2013 and 2014 , what is the basis point variation observed in the operating ma",3.6,360,False,False,24037,213,4.399
+AON/2014/page_47.pdf-4,"if the hr solutions segment generated 35% ( 35 % ) of the consolidated revenue , what would be the t",12182.85714,12185,True,False,24048,171,6.433
+PNC/2013/page_207.pdf-2,was the notional amount of derivatives designated as hedging instruments under gaap greater than the,no,no,True,False,24030,178,4.591
+CB/2010/page_88.pdf-3,"by what amount have catastrophic losses in 2010 surpass the catastrophic losses of 2009 , ( in milli",229.0,229,True,False,24474,151,4.182
+BLL/2007/page_35.pdf-1,"what is the total amount of cash outflow used for shares repurchased during october 2007 , in millio",37.75428,37.75,True,False,24042,191,3.975
+GS/2016/page_77.pdf-1,what percentage of total net revenue investing & lending segment is due to equity securities in 2016,0.63064,63.1%,True,False,24375,217,5.518
+BLL/2010/page_28.pdf-4,what was the difference in percentage cumulative total shareholder return for ball corporation compa,0.6694,66.94%,True,False,24035,319,5.61
+GPN/2017/page_77.pdf-1,what portion of the total identifiable net assets is in cash?,0.7373,73.7%,True,False,23937,203,3.771
+CME/2012/page_70.pdf-4,by what percentage can cme increase their current line of credit?,0.4,40%,True,False,25093,210,6.229
+DRE/2007/page_59.pdf-2,goodwill comprises what percentage of total assets acquired?,1.69695,1.69%,True,False,23976,194,5.307
+JPM/2007/page_147.pdf-3,how much of the firm-sponsored qspes that hold asf framework loans are serviced by the firm?,10.3,9.7 billion,False,False,24138,148,2.834
+PNC/2018/page_171.pdf-1,in 2018 what was the percent of the total commitments to extend credit and other commitments for hom,0.0933,9.33%,True,False,24027,231,5.839
+HIG/2011/page_188.pdf-1,"as of december 31 , 2011 , what was the percentage change in the estimated future net amortization e",-0.58621,-58.62%,True,False,24074,249,4.352
+FBHS/2017/page_76.pdf-1,what was the percent of the total debt associated with the 1250 million revolving credit agreement d,0.40793,40.8%,True,False,24101,223,4.113
+AAL/2013/page_15.pdf-1,what is the ratio of the total flight attendants to pilots,1.61039,1.61,True,False,23656,207,3.972
+LMT/2013/page_74.pdf-2,"what was the percentage of the total severance actions related to our aeronautics , space systems , ",0.36029,36.03%,True,False,24239,213,4.284
+ALLE/2016/page_43.pdf-1,"considering the year 2015 , what was the lowest return for the investment?",-0.1,-0.10%,True,False,23576,377,8.07
+HUM/2017/page_133.pdf-1,what is the percentage of the common stock repurchase among the total program of repurchases?,0.66667,100%,False,False,24183,256,5.713
+FIS/2007/page_91.pdf-2,what portion of the total interest expense is related to unpaid taxes in 2007?,0.16667,16.67%,True,False,24139,263,5.477
+HIG/2008/page_318.pdf-3,what is the net change in total statutory capital from 2007 to 2008?,-2138.0,-2138,True,False,24429,168,5.275
+RE/2015/page_33.pdf-1,what is the book to market ratio of the commercial mortgage-backed securities,0.99474,99.48%,True,False,24556,195,3.889
+MRO/2009/page_56.pdf-3,by what percentage did the average henry hub natural gas benchmark decrease from 2007 to 2009?,-0.41837,41.8%,False,False,24278,281,6.189
+MSI/2006/page_61.pdf-1,what is the percentage of decrease of long-term debt from 2007 to 2011?,0.54701,0%,False,False,24372,406,9.304
+PNC/2011/page_87.pdf-3,"for 2012 , what percent of the home equity lines of credit interest only product was due to home equ",0.3385,33.84%,True,False,24359,235,4.616
+SNA/2012/page_33.pdf-1,what is the growth rate of snap's share price from 2007 to 2008?,-0.1634,-16.34%,True,False,23730,231,4.875
+NKE/2016/page_37.pdf-1,"as of may 31 , 2016 what percentage of cash and cash equivalents was held in foreign subsidiaries?",0.83636,83.64%,True,False,25084,254,6.052
+ZBH/2017/page_71.pdf-3,percent change in fair value of beginning assets in this time period?,0.04828,15.63%,False,False,24504,277,6.304
+CMCSA/2015/page_64.pdf-2,what would the investment income ( loss ) have been in 2014 without the gain from the sale of the in,-147.0,-147,True,False,24239,268,5.888
+SLB/2012/page_44.pdf-1,as of december 312012 what was the outstanding amount of share repurchase authorized in billions?,0.88,8,False,False,24375,112,2.624
+MRO/2006/page_33.pdf-3,what was average propane sales in tbd for the three year period?,22.33333,22.33,True,False,24397,210,5.152
+ETR/2016/page_418.pdf-3,was the change in net revenue from changes in transmission revenue more significant than the change ,yes,yes,True,False,23752,165,3.782
+MRO/2015/page_18.pdf-1,"for 2016 , what was the total african and us net undeveloped acres expiring , in thousands ? \\n",257.0,257,True,False,23622,149,2.996
+LMT/2017/page_80.pdf-3,what was the change in millions of weighted average common shares outstanding for diluted computatio,-11.6,-11.6,True,False,24279,183,4.641
+ETR/2008/page_377.pdf-3,what is the percent change in net revenue between 2006 and 2007?,0.0967,9.66%,True,False,23955,272,5.047
+GS/2017/page_106.pdf-3,"what percentage of total market risk for positions , accounted for at fair value , that are not incl",0.55057,55.1%,True,False,24132,209,4.61
+RE/2017/page_159.pdf-1,"at december 31 , 2017 under the 2010 employee plan what was the percent of shares that had been gran",1446527.0,36.16%,False,False,24013,278,5.987
+LMT/2010/page_42.pdf-2,what is the percentage increase in the net cash provided by operating activities in 2010 compare to ,0.11787,11.78%,True,False,24501,277,7.111
+AES/2017/page_175.pdf-4,"what percentage of the company's receivable balances in puerto rico as of december 31 , 2017 was pas",0.61628,61.63%,True,False,24148,200,5.216
+HII/2017/page_124.pdf-1,what portion of the equity compensation plan approved by security holders is to be issued upon the e,0.09895,9.91%,True,False,23841,282,6.054
+CME/2012/page_70.pdf-2,what portion of the minimum total assets available for default is related to assessment powers?,0.72665,72.6%,True,False,25096,207,6.511
+ETR/2017/page_26.pdf-2,what are the nuclear fuel expenses as a percentage of 2016 net revenue?,0.0441,4.41%,True,False,23897,192,4.071
+CDNS/2012/page_30.pdf-2,what was the difference in percentage cumulative 5-year total stockholder return for cadence design ,-31.86,-31.86%,True,False,23688,332,18.209
+FIS/2007/page_94.pdf-4,what percentage of total future minimum operating lease payments for leases with remaining terms gre,0.14162,14.16%,True,False,23968,229,5.2
+AMT/2008/page_32.pdf-1,"what is the average number of common stock shares per register holder as of february 13 , 2009?",795786.92786,796000,True,False,23937,172,3.629
+PM/2017/page_99.pdf-3,"what was the change in weighted-average shares for diluted eps from 2016 to 2017 , in millions?",2.0,2,True,False,23687,168,3.578
+PNC/2011/page_78.pdf-2,"how much of an increase , in millions , to the pension expenses did the three changes in assumption ",43.0,43,True,False,24314,147,3.903
+JPM/2009/page_133.pdf-1,"if there were a 200bp rise in rates , how much more would the impact be on earnings in 2009 vs . 200",1930.0,-1930,False,False,24562,194,11.245
+LMT/2006/page_90.pdf-2,what was the percentage change in the rental expense under operating leases from 2004 to 2005,0.01887,1.89%,True,False,24182,220,16.235
+AMT/2005/page_105.pdf-1,in 2005 what was the percentage of the federal nol set to expire between 2016 to 2020,0.18433,18.43%,True,False,24100,243,4.518
+DRE/2013/page_39.pdf-1,in 2012 what was the percent of the total second generation capital expenditures by reportable opera,0.47104,47.0%,True,False,24057,218,3.973
+AON/2011/page_134.pdf-1,what was the percent of the increase in the aons revenues for risk solutions from 2010 to 2011,0.06134,6.14%,True,False,23899,232,5.309
+DISCA/2012/page_39.pdf-2,what is the difference in millions of international subscribers between discovery channel and tlc re,72.0,72,True,False,24141,140,3.051
+MAS/2018/page_35.pdf-2,what was the difference in operating profit margins as adjusted between 2017 and 2018?,-0.006,-0.6%,True,False,24194,149,3.068
+MRO/2008/page_69.pdf-3,"during 2008 , what was the change in average realized price for synthetic crude oil and vacuum gas o",66.93,Insufficient data to determine the change.,False,False,24350,260,5.603
+MRO/2009/page_139.pdf-1,how much did net rental expense increase from 2007 to 2009?,0.06198,15 million,False,False,24197,138,5.61
+SPGI/2015/page_57.pdf-1,what was the net equity in the assets acquired,2234.0,2234,True,False,24215,184,12.212
+FBHS/2017/page_76.pdf-2,what was the percentage growth in the total long-term debt from 2016 to 2017,76.5,5.34%,False,False,24097,294,18.142
+UNP/2014/page_75.pdf-1,what was the percentage growth from 2013 to 2014 in the total accounts payable and other current lia,0.07032,7.04%,True,False,24040,242,3.98
+STT/2009/page_73.pdf-3,what is the percent change of securities between 2008 and 2009?,0.34223,34.24%,True,False,23939,263,4.509
+MRO/2017/page_111.pdf-4,by how much did proved undeveloped reserves increase during 2017?,-0.01087,-6,False,False,24103,260,4.794
+RSG/2015/page_142.pdf-1,what was the ratio of the 2016 hedged gallons to 2017,2.25,2.25,True,False,23989,189,3.876
+APD/2016/page_57.pdf-1,"considering the 2016's special terminations settlements and curtailments , what is the percentage of",0.87671,87.67%,True,False,24298,223,4.382
+ABMD/2007/page_52.pdf-1,"what is the total possible purchase price for impella including potential contingent payments , in m",56.3,56.3,True,False,24233,122,2.836
+RSG/2016/page_144.pdf-2,what was the ratio of the aggregate fair values of our outstanding fuel hedges for 2015 and 2016,14.0,0.0711,False,False,24084,203,4.196
+GPN/2017/page_77.pdf-4,how much money can the company deduct on the income tax in the future after this acquisition?,73576.0,0,False,False,23943,173,3.155
+MRO/2014/page_58.pdf-1,what percentage of the board of directors approved budget was capital expenditures?,0.97143,97.14%,True,False,24199,188,3.459
+CME/2017/page_97.pdf-1,how many class a common stocks issued and outstanding were issued between 2016 and 2017 in thousands,995.0,995,True,False,24087,172,3.481
+SLB/2012/page_44.pdf-4,what was the growth rate of the cash flows from operations from 2011 to 2012,0.11475,11.48%,True,False,24376,235,4.998
+APD/2013/page_36.pdf-2,"considering the year 2012 , what is the sales to operating income ratio?",9.41928,9.41,True,False,23717,158,3.461
+ZBH/2017/page_71.pdf-2,what was the change in defined contribution plans expenses for the u.s . between 2016 and 2017 in mi,5.4,5.4,True,False,24516,163,3.463
+RSG/2017/page_142.pdf-2,what was the percent change in the weighted average cost per share from 2016 to 2017,0.31466,31.5%,True,False,24014,281,4.893
+HOLX/2008/page_84.pdf-1,what portion of the long-term debt is reported under the current liabilities section of balance shee,0.01748,38480,False,False,24241,112,2.728
+HIG/2011/page_188.pdf-3,what is the change in dac balance resulting from all amortization accounts in 2011?,-3427.0,-3444,True,False,24054,178,3.169
+UA/2009/page_50.pdf-2,what was the percentage change in the the fair value of our foreign currency forward contracts from ,-0.75,-75%,True,False,24000,238,4.351
+ZBH/2003/page_58.pdf-2,what is the change in finished goods in millions between 2002 and 2003?,177.6,177.6,True,False,24491,139,3.34
+HOLX/2012/page_113.pdf-2,"what is the expected yearly stock-based compensation expense over the remaining vesting period , ( i",6.62857,6.63,True,False,24291,207,4.089
+GS/2016/page_77.pdf-2,"in millions for 2016 2015 , and 2014 , what are total equity securities?",10933.0,"2016: 2573 million, 2015: 3781 million, 2014: 4579 million",False,False,24376,114,2.505
+JPM/2018/page_110.pdf-5,in 2018 what was the available for sale securities average compared to the period end,0.88966,"The average available-for-sale securities in 2018 was $203,449 million, while the period-end value was $228,681 million, resulting in a difference of $25,232 million.",False,False,24690,200,3.763
+SNPS/2006/page_69.pdf-1,what percentage of the total purchase price is represented by intangible assets?,0.54126,54.1%,True,False,23964,225,3.77
+LKQ/2010/page_84.pdf-2,what was the percentage change in rental expense for operating leases from 2009 to 2010?,0.16958,16.95%,True,False,23946,281,5.559
+ETR/2008/page_249.pdf-1,what percentage of entergy's total employees are employed in entergy arkansas?,0.10403,10.39%,True,False,23643,175,3.299
+STT/2008/page_83.pdf-1,what is the average variance of the value at risk of each 2008 section? ( $ ),3.85,1.55 million,False,False,24068,330,5.179
+CB/2010/page_200.pdf-2,what is the growth rate of net income for bermuda subsidiaries from 2009 to 2010?,0.02575,2.58%,True,False,24164,232,4.325
+AAPL/2014/page_38.pdf-1,in what year was the cash cash equivalents and marketable securities the highest?,155239.0,2014,False,False,24192,108,2.437
+AAL/2013/page_15.pdf-4,what portion of the total full-time employees of american are pilots?,0.13145,13.14%,True,False,23657,210,4.076
+ETR/2011/page_341.pdf-1,what is the average price of the increased electricity usage per gwh?,18068.83365,17800.77,False,False,23799,256,5.315
+JPM/2014/page_65.pdf-5,did jpmorgan chase outperform the kbw bank index over the five year period?,no,no,True,False,23709,163,3.145
+AAPL/2014/page_38.pdf-2,what was the change in property plant and equipment net from 2013 to 2014 in millions?,4027.0,4027,True,False,24198,183,3.466
+RE/2017/page_159.pdf-2,what is the percentage change in unaffiliated life insurance company from 2016 to 2017?,0.01725,1.72%,True,False,24008,291,5.923
+LMT/2012/page_47.pdf-2,what was the ratio of the decreases in the net sales to the operating profit for mst from 2010 to 20,4.57353,3.24,False,False,24218,327,5.711
+BKR/2017/page_103.pdf-2,what is the risk free interest of the stock based compensation expense in 2017?,777000.0,2.1%,False,False,24032,90,2.544
+LMT/2016/page_48.pdf-2,in 2016 based on the increase in the net sales what was the ratio of the increasing factor to the of,0.98491,40.73,False,False,24336,250,3.96
+SYY/2019/page_9.pdf-1,what was the change in the percentage of sales to restaurants from 2017 to 2018?,0.01,1%,True,False,24181,136,3.168
+FIS/2007/page_94.pdf-1,what percentage of total future minimum operating lease payments for leases with remaining terms gre,0.25321,25.3%,True,False,23968,230,4.693
+AON/2009/page_46.pdf-1,"what is the average segment revenue , in millions?",6140.0,6140,True,False,24073,174,9.225
+TROW/2010/page_22.pdf-4,"what percentage of tangible book value at december 31 , 2010 is due to cash and cash equivalents and",0.57692,57.69%,True,False,24377,272,6.903
+ETR/2011/page_376.pdf-3,what is the average price per gwh for the variance in volume?,-1386.93301,"29,590.15",False,False,23756,238,5.558
+VTR/2007/page_47.pdf-1,"prior to the shares repurchased in 2007 , how many shares of common stock were outstanding?",138326479.0,138311810,True,False,23758,130,2.823
+BLK/2016/page_119.pdf-2,what is the interest from 2017 to 2025 as a percentage of the total long-term borrowings?,0.0164,3.95%,False,False,24816,520,8.174
+BLK/2016/page_119.pdf-1,what are the notes due 2021 as a percentage of total long-term borrowings?,0.15188,15.16%,True,False,24811,217,15.541
+AMT/2004/page_81.pdf-2,what was the percent of the decrease in the other intangible assets net from 2003 to 2004\\n,-0.03378,3.38%,False,False,24112,267,5.133
+BLL/2007/page_35.pdf-2,"for q4 2007 , what was the total amount spent on share repurchases?",58864176.24,58871.28,False,False,24037,334,6.074
+TFX/2015/page_70.pdf-1,"what is the total value of the issued options , warrants and rights , ( in millions ) ?",125.50449,125.00,True,False,24428,240,5.041
+ADI/2011/page_50.pdf-1,what is the percentage change in fair value of forward exchange contracts asset from 2010 to 2011?,-0.65932,-65.9%,True,False,24277,297,5.669
+LMT/2010/page_42.pdf-3,what is the net change in cash in 2010?,-135.0,-135,True,False,24490,265,5.612
+JPM/2007/page_147.pdf-1,in 2007 what was the percent of the retained interest of the total principal amount of beneficial in,20460.0,2.05%,False,False,24138,213,8.882
+IPG/2008/page_21.pdf-4,what is the cash outflow for the repurchase of shares during october 2008?,177926.96,177646.76,True,False,23613,192,4.392
+GS/2016/page_77.pdf-3,operating expenses were what multiple of pre-tax earnings in 2015?,11.52066,0.791,False,False,24370,158,3.19
+LMT/2006/page_90.pdf-1,"what percentage of future minimum lease commitments at december 31 , 2006 for all operating leases t",0.26182,26.18%,True,False,24197,235,5.576
+MAS/2018/page_60.pdf-1,what are the total current assets of kichler included in the acquisition price with the revised vers,273.0,271 million,False,False,23867,153,3.565
+MRO/2007/page_134.pdf-4,by how much did the expected annual dividends per share increase from 2005 to 2007?,0.45455,0.30,False,False,24392,154,3.048
+PM/2017/page_99.pdf-4,"what was the change in weighted-average shares for diluted eps from 2015 to 2016 , in millions?",2.0,-2,False,False,23687,172,4.193
+JPM/2008/page_85.pdf-5,in 2008 what was the percent of the total capital risk based capital components and assets that was ,0.26319,26.33%,True,False,24395,220,4.387
+TFX/2015/page_70.pdf-2,"what is the total value of the options , warrants and rights that remain available for future issuan",386.79719,386,True,False,24433,215,4.614
+AWK/2013/page_132.pdf-1,based on the information provided what is the ratio of the post retirement benefit obligation to the,9.80562,9.81,True,False,23618,215,5.376
+HWM/2017/page_41.pdf-2,"considering the second quarter of 2017 , what is the average sale price per share of the company 201",25.205,25.21,True,False,24135,213,4.898
+IP/2007/page_75.pdf-2,"what percentage of december 31 , 2007 , total future minimum commitments under existing non-cancelab",0.0651,6.52%,True,False,24418,229,5.714
+IP/2007/page_31.pdf-2,what percentage of industrial packaging sales where represented by european industrial packaging net,0.20305,20.27%,True,False,24367,215,3.876
+AMAT/2014/page_18.pdf-1,what is the growth rate in sales from 2013 to 2014?,0.21154,23.0%,False,False,24215,263,5.3
+AMT/2010/page_34.pdf-1,what is the growth rate in the price of shares from the highest value during the quarter ended decem,0.06756,6.75%,True,False,23786,319,7.648
+JKHY/2014/page_30.pdf-1,what was the cumulative total return on the s & p 500 for the five year period?,136.98,136.98%,True,False,23844,250,4.708
+AAPL/2004/page_36.pdf-1,what was the greatest gross margin in millions for the three year period?,2259.0,2259,True,False,24151,152,3.666
+PNC/2009/page_41.pdf-4,what percentage of total commercial mortgages were at fair value?,0.71064,80.8%,False,False,24342,198,4.485
+ETR/2002/page_86.pdf-4,what was the sum of the notes entergy issued to nypa with seven and eight annual payment installment,916.0,916 million,True,False,24044,158,3.812
+PM/2015/page_85.pdf-4,what was the change in millions of trade receivables sold from 2014 to 2015?,768.0,768,True,False,25128,155,4.468
+DRE/2007/page_59.pdf-3,what was the percent of the total purchase price for the purchase of a portfolio of five industrial ,5929.17,73.7%,False,False,24005,208,4.673
+AES/2001/page_44.pdf-4,contract generation revenues were what in millions in 2001?,2506.06061,2508.33,True,False,24319,212,5.719
+AON/2010/page_115.pdf-4,what is the percentage increase in total stock-based compensation expense from 2009 to 2010?,0.05742,5.74%,True,False,24048,229,4.119
+ETR/2017/page_26.pdf-1,what is the percent change in net revenue from 2015 to 2016?,0.08042,-7.44%,False,False,23898,226,4.61
+HII/2017/page_104.pdf-2,what is the percentage change in the unamortized debt issuance costs associated with its credit faci,0.375,37.5%,True,False,24405,243,5.306
+ETR/2015/page_131.pdf-3,what is the percent change in annual long-term debt maturities from 2018 to 2019?,0.07039,-6.57%,False,False,24072,281,4.992
+UAA/2016/page_52.pdf-3,what percent of total operating income was emea in 2015?,0.00764,0.764%,True,False,24060,207,4.478
+IPG/2008/page_21.pdf-2,what is the total cash outflow for the repurchase of shares in the last three months of 2008?,47016.82,243123.68,False,False,23618,337,6.4
+VNO/2012/page_84.pdf-1,what was the total five year change in the nareit all equity index?,32.0,32%,True,False,23513,277,5.399
+ETR/2011/page_376.pdf-4,what was the ratio of the net income to the revenues in 2010,0.00444,Ratio = (Net Income for 2010) / $540.2 million (exact value depends on net income for 2009),False,False,23758,324,6.629
+CMCSA/2015/page_64.pdf-3,what was the average investment income ( loss ) net 2013 to 2015,478.0,317.67,False,False,24225,211,4.438
+IP/2007/page_31.pdf-3,what was the change in net sales in millions in 2007 in billions,0.3,0.32,False,False,24364,173,4.629
+UNP/2014/page_25.pdf-3,what was the percentage change in fuel surcharge program freight revenue from 2012 to 2013?,0.0,0%,True,False,24007,221,4.449
+UNP/2006/page_37.pdf-3,what was the percentage change in cash capital investments in track from 2004 to 2005?,0.10843,10.84%,True,False,24150,234,5.089
+UNP/2014/page_35.pdf-3,what was the percentage change in cash provided by operating activities from 2012 to 2013?,0.10745,10.74%,True,False,23865,236,5.479
+ABMD/2009/page_56.pdf-2,what portion of contractual obligations is expected to be paid within 12 months?,0.48842,48.88%,True,False,24453,228,4.584
+CAT/2017/page_85.pdf-3,what portion of the maximum exposure to loss from vies is related to guarantees in 2018?,0.2933,62.8%,False,False,24367,231,4.786
+AAP/2012/page_12.pdf-3,what was the average annual creation of new stores for aap from 2008 to 2012?,112.5,121,False,False,24077,227,4.566
+UNP/2014/page_75.pdf-2,what was the percentage change in total expense for repairs and maintenance from 2013 to 2014?,0.04348,4.35%,True,False,24038,243,4.299
+UNP/2015/page_24.pdf-2,what was the percentage change in free cash flow from 2013 to 2014?,-0.27866,-27.9%,True,False,24006,231,4.701
+BDX/2018/page_82.pdf-3,"what is the average cost of interest , in millions , for 2016-2018?",74.33333,74.33,True,False,23731,199,4.204
+IP/2012/page_93.pdf-3,"at december 31 , 2012 , what was the percent of the total future minimum commitments under existing ",0.14108,28.3%,False,False,24430,226,5.741
+BDX/2018/page_82.pdf-4,"what is the total net pension cost from 2016-2018 , in millions?",388.0,388,True,False,23730,145,3.304
+PPG/2011/page_70.pdf-3,what was royalty income as a percentage of total other income in 2009?,0.3,30%,True,False,24536,179,3.276
+ABMD/2006/page_75.pdf-3,what percentage of total future minimum lease payments are due in 2008?,0.2845,28.5%,True,False,23984,196,4.188
+UNP/2011/page_76.pdf-3,what percentage of total accounts payable and other current liabilities was accrued casualty costs a,0.11979,11.97%,True,False,24040,237,4.578
+ABMD/2009/page_88.pdf-3,what is the total contingent payments to impella 2019s former shareholders if all targets are achiev,16750000.0,16750000,True,False,24158,198,3.662
+IP/2012/page_93.pdf-4,what was the average rent expense from 2010 to 2012 \\n,324.5,215.33,False,False,24412,187,5.099
+ABMD/2009/page_56.pdf-3,what portion of operating lease commitments is expected to be paid within 12 months?,0.21637,21.65%,True,False,24454,226,4.102
+UNP/2007/page_65.pdf-2,what percentage of total debt is due in 2011?,0.07161,7.15%,True,False,24061,191,4.257
+BKR/2017/page_103.pdf-3,what portion of the compensation expense in 2017 is relates to the acceleration of equity awards upo,0.40541,40.54%,True,False,24042,243,10.423
+PPG/2011/page_70.pdf-4,what was royalty income as a percentage of total other income in 2011?,0.31073,31.09%,True,False,24536,177,4.692
+CAT/2017/page_85.pdf-4,what portion of the maximum exposure to loss from vies is related to guarantees in 2017?,0.62864,62.8%,True,False,24367,224,15.785
+IP/2009/page_37.pdf-3,"considering the years 2008 and 2009 , what is the variation observed in the operating profit , in mi",416.0,416,True,False,24389,143,3.022
+UNP/2013/page_54.pdf-3,what percentage of total freight revenues was automotive in 2013?,0.09457,10.04%,False,False,24093,184,3.582
+IP/2005/page_19.pdf-3,what was the average industry segment operating profits from 2003 to 2005,2850.0,1899,False,False,24346,197,4.454
+UNP/2008/page_79.pdf-2,what was the difference in billions of sold receivables from 2007 to 2008?,1.7,1.7,True,False,24186,149,3.498
+BLK/2012/page_160.pdf-3,"what portion of tax benefit would affect the effective tax rate if recognized as of december 31 , 20",0.64756,226 million,False,False,24515,80,2.682
+IP/2007/page_75.pdf-3,"at december 31 , 2007 , what was the percent of the total future minimum commitments under existing ",0.72099,6.52%,False,False,24413,215,4.497
+UNP/2008/page_77.pdf-2,what was the percentage change in equipment rents payable from 2007 to 2008?,-0.09709,-9.71%,True,False,23895,219,5.03
+ANSS/2013/page_55.pdf-2,what percentage of total contractual obligations come from after five years?,0.41602,41.6%,True,False,23967,194,6.021
+UNP/2014/page_75.pdf-3,what was the percentage change in total expense for repairs and maintenance from 2012 to 2013?,0.09524,9.52%,True,False,24038,243,4.484
+BLK/2017/page_122.pdf-1,"what is the growth rate in based rent for hudson yards , new york facility in the second period?",0.13725,13.73%,True,False,24812,294,6.888
+UNP/2015/page_35.pdf-2,what was the percentage change in cash provided by operating activities from 2014 to 2015?,-0.00555,-0.56%,False,False,23922,237,5.221
+UNP/2014/page_25.pdf-4,what was the percentage change in fuel surcharge program freight revenue from 2013 to 2014?,0.07692,7.69%,True,False,24007,241,5.548
+IP/2009/page_37.pdf-4,what is the average value for sales?,3090.0,3090,True,False,24372,176,3.972
+ANSS/2013/page_55.pdf-3,what percentage of total contractual obligations comes from global headquarters operating leases?,0.47317,47.3%,True,False,23968,198,4.691
+ABMD/2009/page_88.pdf-4,what portion of the last payment for the final milestone was paid through the issuance of common sto,0.67761,100%,False,False,24156,302,8.822
+ABMD/2007/page_52.pdf-3,"what portion of total future obligations is related to operating lease obligations as of march 31 , ",0.54429,54.4%,True,False,24237,200,7.118
+UNP/2015/page_24.pdf-3,what was the percentage change in free cash flow from 2014 to 2015?,-0.6516,-65.1%,True,False,24006,227,4.488
+BLK/2014/page_119.pdf-3,what portion of total long-term borrowings is due in the next 24 months?,0.15152,15.15%,True,False,24920,335,9.499
+LKQ/2010/page_84.pdf-3,in 2010 what was the sum of the future minimum lease commitments due in 2014,0.12123,37660,False,False,23946,126,3.258
+UNP/2011/page_21.pdf-3,what percentage of total number of shares purchased were purchased in october ?,0.09691,9.7%,True,False,23741,204,5.324
+MO/2012/page_44.pdf-3,what is the growth rate in total shipment volume from 2011 to 2012?,0.03907,3.91%,True,False,24704,276,5.589
+LKQ/2018/page_83.pdf-2,what was the change in the warranty reserve in 2017 in thousands,3517.0,3527,True,False,24163,318,7.249
+BLK/2012/page_37.pdf-3,what portion of the fixed income is related to americas?,0.87874,87.8%,True,False,24319,198,2.82
+BLK/2013/page_124.pdf-3,"what is the annual interest expense related to '2022 notes' , in millions?",25.3125,25,False,False,25032,162,3.731
+LKQ/2010/page_84.pdf-4,what was the cumulative lease payments to the employee who became an officer of the company followin,2.8,2.8 million,True,False,23955,170,3.634
+APTV/2014/page_49.pdf-1,what is the lowest return for the first month of the investment?,-10.73,0.98%,False,False,23838,260,5.119
+IP/2005/page_35.pdf-3,what was the percent f the purchase obligations in 2006 set aside for the contract for the purchase ,0.00074,73.5%,False,False,24477,240,5.408
+BLK/2014/page_119.pdf-4,what portion of total long-term borrowings is due in the next 36 months?,0.29293,15.15%,False,False,24920,350,5.887
+TFX/2015/page_70.pdf-3,"if the company were to purchase the remaining shares at the price at december 31 , 2015 , how much w",386797189.66,386155000.66,True,False,24443,187,3.257
+UNP/2013/page_44.pdf-2,what was the net change in the number of environmental sites from 2011 to 2012?,-1.0,-1,True,False,24182,333,4.893
+UNP/2014/page_35.pdf-4,what was the percentage change in cash provided by operating activities from 2013 to 2014?,0.08237,8.24%,True,False,23865,235,3.67
+UNP/2011/page_21.pdf-4,what percentage of total number of shares purchased were purchased in december?,0.45644,45.6%,True,False,23741,220,4.48
+BLK/2016/page_119.pdf-3,what are the pre tax gains recognized in other comprehensive income in 2015?,30.0,19 million,False,False,24809,108,1.904
+SNPS/2006/page_69.pdf-3,"what is the variation observed between the tangible and intangible assets , in millions?",5.5,5.5,True,False,23966,175,4.201
+UNP/2008/page_77.pdf-3,what was the percentage change in accrued wages and vacation from 2007 to 2008?,-0.06853,-6.86%,True,False,23896,231,4.539
+AAP/2011/page_28.pdf-3,"compared to the lowest stock price , how much did advanced auto parts outperform the overall market?",0.71886,71.82%,True,False,23860,442,7.354
+BLK/2016/page_119.pdf-4,what are the pre tax gains recognized in other comprehensive income in 2016?,22.0,22 million,True,False,24809,182,4.118
+MO/2012/page_44.pdf-4,what is the growth rate in total shipment volume from 2010 to 2011?,0.01408,1.41%,True,False,24704,290,5.923
+IP/2006/page_32.pdf-3,what was the percentage reduction in net sales for shorewood in 2006 from 2005 s,-0.03039,3.04%,False,False,24380,221,3.864
+LKQ/2018/page_83.pdf-3,what was the percent of the total self-insurance reserves that was classified as current in 2018,0.49524,49.52%,True,False,24169,203,5.797
+PPG/2013/page_40.pdf-3,what was the percentage change in research and development net from 2012 to 2013?,0.07726,7.72%,True,False,24295,219,3.889
+IP/2007/page_75.pdf-4,what was the percent of the benefit related to the effective settlement of tax audits recorded as pa,0.0988,9.88%,True,False,24410,216,2.812
+BLK/2012/page_37.pdf-4,what portion of the long-term assets is related to americas?,0.73863,73.8%,True,False,24320,195,3.878
+PPG/2013/page_40.pdf-4,what was the percentage change in research and development net from 2011 to 2012?,0.05841,5.84%,True,False,24295,219,5.963
+BLK/2013/page_125.pdf-3,what is the growth rate in rent expense and certain office equipment expense in 2013 compare to 2012,0.03008,3.01%,True,False,24366,221,5.291
+ABMD/2004/page_26.pdf-3,what percentage of total future minimum lease payments are due after 2009?,0.15465,15.5%,True,False,24114,224,4.319
+IP/2005/page_35.pdf-4,what was the percent of the total contractual obligations for future payments for total debt in 2005,0.25579,25.6%,True,False,24468,228,5.991
+IP/2006/page_32.pdf-4,what was the consumer packaging profit margin in 2006,0.05336,5.34%,True,False,24371,182,4.773
+UNP/2015/page_35.pdf-3,what was the percentage change in cash provided by operating activities from 2013 to 2014?,0.08237,8.24%,True,False,23922,235,5.436
+VLO/2018/page_25.pdf-3,what is the total price paid for the total number of shares purchased?,627442960.82,628000000,True,False,24009,148,3.981
+UNP/2011/page_76.pdf-4,what percentage of total accounts payable and other current liabilities was accrued casualty costs a,0.08012,8.01%,True,False,24040,218,3.689
+BLK/2013/page_125.pdf-4,what is the growth rate in rent expense and certain office equipment expense in 2012 compare to 2011,-0.13636,-13.64%,True,False,24366,237,4.798
+BLK/2013/page_124.pdf-4,"what is the annual interest expense related to '2015 notes' , in millions?",10.3125,10,False,False,25032,165,4.861
+ABMD/2004/page_26.pdf-4,what percentage of total future minimum lease payments are due in 2007?,0.16798,16.8%,True,False,24114,208,7.081
+UNP/2008/page_79.pdf-3,what was the percentage difference in sold receivables from 2007 to 2008?,0.10559,10.56%,True,False,24185,247,5.364
+UNP/2013/page_54.pdf-4,what percentage of total freight revenues was automotive in 2011?,0.07721,8.15%,False,False,24093,200,4.483
+UNP/2013/page_44.pdf-3,what was the net change in the number of environmental sites from 2012 to 2013?,-16.0,-17,False,False,24182,235,4.996
+IP/2007/page_31.pdf-4,in 2005 what was industrial packaging the profit margin,0.04735,4.73%,True,False,24360,183,3.784
+BLK/2017/page_122.pdf-3,"what is the growth rate in based rent for hudson yards , new york facility in the third period?",0.13793,13.79%,True,False,24812,305,5.151
+LKQ/2016/page_26.pdf-3,"based on the review of the comparison of cumulative return among lkq corporation , the nasdaq stock ",1.56429,1.5643,True,False,23628,185,5.24
+UNP/2006/page_37.pdf-4,what was the percentage change in cash capital investments in track from 2005 to 2006?,0.01019,1.02%,True,False,24150,234,5.302
+BLK/2012/page_160.pdf-4,"what portion of tax benefit would affect the effective tax rate if recognized as of december 31 , 20",0.61881,250 million,False,False,24515,85,2.23
+BKR/2017/page_103.pdf-4,"what is the total value of rsus converted to bhge rsus , in millions?",68.306,68.31,True,False,24033,187,4.483
+SNPS/2006/page_69.pdf-4,what is the percentage of tax and accounting fees among the total acquisition-related costs?,0.57143,56.5%,False,False,23967,230,8.87
+VRTX/2003/page_71.pdf-3,what was the percentage change in the common stock and option,0.01713,1.71%,True,False,24061,337,6.747
+APTV/2014/page_49.pdf-3,what is the difference between the highest and lowest return for the first year of the investment?,68.92,78.35,False,False,23843,248,6.746
+ABMD/2007/page_52.pdf-4,"what portion of total future obligations is related to purchase obligations as of march 31 , 2007?",0.45571,45.6%,True,False,24236,202,4.889
+ABMD/2006/page_75.pdf-4,what percentage of total future minimum lease payments are due in 2009?,0.21477,21.5%,True,False,23984,218,5.611
+ADI/2011/page_81.pdf-3,what was the percentage increase of total deferred compensation plan investments from 2010 to 2011?\,2.03913,203.4%,True,False,24070,269,5.17
+ADI/2011/page_50.pdf-3,"what would the amount accrued because of interest on the term loan facility after october 29 , 2011?",2.3345,4.137 million,False,False,24277,223,6.024
+UNP/2007/page_65.pdf-3,what percentage of total debt is due after 2012?,0.61419,61.4%,True,False,24061,206,4.822

@@ -1,0 +1,36 @@
+{
+  "reason.predict": {
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "Your task is to answer numerical reasoning questions based on financial data from provided contexts, which may include text and/or tables. Follow these steps carefully to compute the answers:\n\n1. **Data Extraction**: Identify and extract relevant numerical data from the context provided, including values from the financial tables.\n  \n2. **Calculations**: Use the extracted data to perform necessary calculations. This can include:\n   - Summing values for totals.\n   - Finding averages by dividing total sums by the number of instances.\n   - Calculating changes or differences between values for comparisons.\n   - Computing percentages using the formula \\((\\text{Part}/\\text{Whole}) \\times 100\\).\n\n3. **Interpretation**: Ensure that the results are presented in the correct format depending on the question type. Specifically:\n   - For percentage calculations, express results as a number with the '%' sign (e.g., 45.8%).\n   - For yes/no questions, simply respond with 'yes' or 'no'.\n   - Provide numerical answers in their full form unless rounding is explicitly required or beneficial for clarity.\n\n4. **Consistency**: Ensure that the methodology for solving the problems is consistent and that it adheres to standard financial reporting and calculation conventions.\n\n5. **Precision**: Represent numbers accurately without unnecessary rounding unless specifically instructed to do so. For average calculations, decimal places should be retained as needed based on common presentation standards.\n\n6. **Contextual Understanding**: Pay attention to any specific financial context provided, such as the explanation of terms (like mark-to-market adjustments or unrecognized tax benefits), as these may influence the interpretation of the data and subsequent calculations.\n\nEnsure that your reasoning is logical, detailed, and clearly explained in the answer section, breaking it down into steps to show your working process if necessary. \n\nExample questions may involve finding averages, calculating percentage changes, or determining the financial impact of certain line items. The answers must be verified against the data provided to ensure accuracy and relevance.",
+      "fields": [
+        {
+          "prefix": "Context:",
+          "description": "Financial report context including text and tables"
+        },
+        {
+          "prefix": "Question:",
+          "description": "Question requiring numerical reasoning over the financial data"
+        },
+        {
+          "prefix": "Reasoning:",
+          "description": "Step-by-step numerical reasoning showing all calculations"
+        },
+        {
+          "prefix": "Answer:",
+          "description": "Final numerical answer (e.g., '6.9', '56.25%', 'yes')"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.13",
+      "dspy": "3.0.3",
+      "cloudpickle": "3.1"
+    }
+  }
+}

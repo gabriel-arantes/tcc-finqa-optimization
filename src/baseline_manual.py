@@ -41,19 +41,29 @@ Important rules:
 
 
 # ── Exemplos demonstrativos (few-shot) ─────────────────────
-# 10 exemplos selecionados manualmente para cobrir operações
+# 20 exemplos selecionados manualmente para cobrir operações
 # representativas do FinQA, maximizando diversidade:
 #
-#  1. subtract      — diferença entre valores de anos consecutivos
-#  2. divide        — cálculo de proporção/percentual simples
-#  3. subtract+div  — taxa de crescimento (multi-step)
-#  4. pct_change    — variação percentual
-#  5. boolean       — comparação booleana (greater)
-#  6. add           — soma de componentes
-#  7. multiply      — multiplicação para cálculo de valor total
-#  8. average       — cálculo de média aritmética
-#  9. pct_of_total  — percentual de uma parte sobre o total
-# 10. add+divide    — soma seguida de divisão (multi-step)
+#  1. subtract        — diferença entre valores de anos consecutivos
+#  2. divide          — cálculo de proporção/percentual simples
+#  3. subtract+div    — taxa de crescimento (multi-step)
+#  4. pct_change      — variação percentual
+#  5. boolean         — comparação booleana (greater)
+#  6. add             — soma de componentes
+#  7. multiply        — multiplicação para cálculo de valor total
+#  8. average         — cálculo de média aritmética
+#  9. pct_of_total    — percentual de uma parte sobre o total
+# 10. add+divide      — soma seguida de divisão (multi-step)
+# 11. subtract (neg)  — diferença com resultado negativo (queda)
+# 12. multiply+add    — cálculo de valor total com múltiplos itens
+# 13. multi-row add   — soma de múltiplas linhas de tabela
+# 14. divide (ratio)  — razão entre duas métricas financeiras
+# 15. subtract+mult   — diferença convertida para unidade
+# 16. pct_change (neg)— variação percentual negativa (queda)
+# 17. margin          — cálculo de margem (lucro/receita)
+# 18. boolean (no)    — comparação booleana com resposta "no"
+# 19. add+subtract    — soma parcial seguida de subtração
+# 20. divide+subtract — razão seguida de diferença entre razões
 
 FEW_SHOT_EXAMPLES = [
     # ── Demo 1: subtract ──
@@ -277,6 +287,226 @@ FEW_SHOT_EXAMPLES = [
         "program": "divide(add(450, 1320), 2850)",
         "answer": "0.62",
     },
+    # ── Demo 11: subtract com resultado negativo (queda) ──
+    {
+        "context": (
+            "### Financial Table\n"
+            "                      | 2016 (millions) | 2015 (millions)\n"
+            "-----------------------------------------------------------\n"
+            "net income            | 312              | 487"
+        ),
+        "question": "what was the change in net income from 2015 to 2016?",
+        "reasoning": (
+            "Step 1: Identify the relevant values.\n"
+            "  - Net income in 2016: $312 million\n"
+            "  - Net income in 2015: $487 million\n\n"
+            "Step 2: Calculate the change.\n"
+            "  Change = 312 - 487 = -175\n\n"
+            "Net income decreased by $175 million from 2015 to 2016."
+        ),
+        "program": "subtract(312, 487)",
+        "answer": "-175",
+    },
+    # ── Demo 12: multiply+add (valor total de múltiplos itens) ──
+    {
+        "context": (
+            "### Financial Table\n"
+            "award type        | shares (thousands) | weighted avg price\n"
+            "-------------------------------------------------------------\n"
+            "stock options     | 250                | $42.00\n"
+            "restricted stock  | 120                | $45.30"
+        ),
+        "question": "what was the combined total value of all awards granted, in thousands?",
+        "reasoning": (
+            "Step 1: Calculate value of stock options.\n"
+            "  Options value = 250 × $42.00 = $10,500 thousand\n\n"
+            "Step 2: Calculate value of restricted stock.\n"
+            "  Restricted value = 120 × $45.30 = $5,436 thousand\n\n"
+            "Step 3: Calculate total combined value.\n"
+            "  Total = 10500 + 5436 = 15936\n\n"
+            "The combined total value was $15,936 thousand."
+        ),
+        "program": "add(multiply(250, 42.00), multiply(120, 45.30))",
+        "answer": "15936",
+    },
+    # ── Demo 13: soma de múltiplas linhas (table_sum) ──
+    {
+        "context": (
+            "### Financial Table\n"
+            "region          | sales 2017 (millions)\n"
+            "-------------------------------------------\n"
+            "north america    | 3420\n"
+            "europe           | 1890\n"
+            "asia pacific     | 1150\n"
+            "latin america    | 640"
+        ),
+        "question": "what were the total global sales in 2017?",
+        "reasoning": (
+            "Step 1: Identify sales for each region.\n"
+            "  - North America: $3,420 million\n"
+            "  - Europe: $1,890 million\n"
+            "  - Asia Pacific: $1,150 million\n"
+            "  - Latin America: $640 million\n\n"
+            "Step 2: Calculate total.\n"
+            "  Total = 3420 + 1890 + 1150 + 640 = 7100\n\n"
+            "Total global sales in 2017 were $7,100 million."
+        ),
+        "program": "add(add(add(3420, 1890), 1150), 640)",
+        "answer": "7100",
+    },
+    # ── Demo 14: divide (razão entre métricas) ──
+    {
+        "context": (
+            "### Financial Table\n"
+            "                          | 2019 (millions)\n"
+            "----------------------------------------------\n"
+            "current assets             | 8540\n"
+            "current liabilities        | 5230"
+        ),
+        "question": "what was the current ratio in 2019?",
+        "reasoning": (
+            "Step 1: Identify the relevant values.\n"
+            "  - Current assets: $8,540 million\n"
+            "  - Current liabilities: $5,230 million\n\n"
+            "Step 2: Calculate the current ratio.\n"
+            "  Current ratio = 8540 / 5230 = 1.63\n\n"
+            "The current ratio in 2019 was 1.63."
+        ),
+        "program": "divide(8540, 5230)",
+        "answer": "1.63",
+    },
+    # ── Demo 15: subtract+multiply (diferença em unidades diferentes) ──
+    {
+        "context": (
+            "### Financial Table\n"
+            "                     | 2020 (billions) | 2019 (billions)\n"
+            "-----------------------------------------------------------\n"
+            "total assets          | 15.8            | 14.3"
+        ),
+        "question": "what was the increase in total assets from 2019 to 2020, in millions?",
+        "reasoning": (
+            "Step 1: Identify the relevant values.\n"
+            "  - Total assets 2020: $15.8 billion\n"
+            "  - Total assets 2019: $14.3 billion\n\n"
+            "Step 2: Calculate the increase in billions.\n"
+            "  Increase = 15.8 - 14.3 = 1.5 billion\n\n"
+            "Step 3: Convert to millions.\n"
+            "  1.5 billion × 1000 = 1500 million\n\n"
+            "The increase in total assets was $1,500 million."
+        ),
+        "program": "multiply(subtract(15.8, 14.3), const_1000)",
+        "answer": "1500",
+    },
+    # ── Demo 16: variação percentual negativa ──
+    {
+        "context": (
+            "### Financial Table\n"
+            "                          | 2018 (millions) | 2017 (millions)\n"
+            "----------------------------------------------------------------\n"
+            "research & development     | 285             | 340"
+        ),
+        "question": "what was the percentage change in R&D spending from 2017 to 2018?",
+        "reasoning": (
+            "Step 1: Identify the relevant values.\n"
+            "  - R&D spending 2018: $285 million\n"
+            "  - R&D spending 2017: $340 million\n\n"
+            "Step 2: Calculate the percentage change.\n"
+            "  Change = (285 - 340) / 340 = -55 / 340 = -0.1618 = -16.18%\n\n"
+            "R&D spending decreased by 16.18% from 2017 to 2018."
+        ),
+        "program": "divide(subtract(285, 340), 340)",
+        "answer": "-16.18%",
+    },
+    # ── Demo 17: margin (lucro/receita) ──
+    {
+        "context": (
+            "### Financial Table\n"
+            "                          | 2020 (millions)\n"
+            "----------------------------------------------\n"
+            "total revenue              | 4200\n"
+            "cost of goods sold         | 2730\n"
+            "gross profit               | 1470"
+        ),
+        "question": "what was the gross margin in 2020?",
+        "reasoning": (
+            "Step 1: Identify the relevant values.\n"
+            "  - Gross profit: $1,470 million\n"
+            "  - Total revenue: $4,200 million\n\n"
+            "Step 2: Calculate the gross margin.\n"
+            "  Gross margin = 1470 / 4200 = 0.35 = 35.0%\n\n"
+            "The gross margin in 2020 was 35.0%."
+        ),
+        "program": "multiply(divide(1470, 4200), const_100)",
+        "answer": "35.0%",
+    },
+    # ── Demo 18: boolean com resposta "no" ──
+    {
+        "context": (
+            "### Financial Table\n"
+            "                          | 2019 (millions) | 2018 (millions)\n"
+            "----------------------------------------------------------------\n"
+            "operating income           | 523             | 610"
+        ),
+        "question": "did operating income increase from 2018 to 2019?",
+        "reasoning": (
+            "Step 1: Identify the relevant values.\n"
+            "  - Operating income 2019: $523 million\n"
+            "  - Operating income 2018: $610 million\n\n"
+            "Step 2: Compare the values.\n"
+            "  $523 million < $610 million\n"
+            "  Operating income decreased from 2018 to 2019.\n\n"
+            "No, operating income did not increase."
+        ),
+        "program": "greater(523, 610)",
+        "answer": "no",
+    },
+    # ── Demo 19: add+subtract (soma parcial menos um valor) ──
+    {
+        "context": (
+            "### Financial Table\n"
+            "                          | 2017 (millions)\n"
+            "----------------------------------------------\n"
+            "total revenue              | 9800\n"
+            "domestic revenue           | 6200\n"
+            "european revenue           | 2400\n"
+            "other international        | 1200"
+        ),
+        "question": "how much revenue came from non-domestic markets in 2017?",
+        "reasoning": (
+            "Step 1: Identify the relevant values.\n"
+            "  - Total revenue: $9,800 million\n"
+            "  - Domestic revenue: $6,200 million\n\n"
+            "Step 2: Calculate non-domestic revenue.\n"
+            "  Non-domestic = Total - Domestic = 9800 - 6200 = 3600\n\n"
+            "Revenue from non-domestic markets was $3,600 million."
+        ),
+        "program": "subtract(9800, 6200)",
+        "answer": "3600",
+    },
+    # ── Demo 20: diferença entre razões de dois anos ──
+    {
+        "context": (
+            "### Financial Table\n"
+            "                   | 2016 (millions) | 2015 (millions)\n"
+            "---------------------------------------------------------\n"
+            "operating expenses  | 720              | 680\n"
+            "total revenue       | 3200             | 3000"
+        ),
+        "question": (
+            "what was the change in operating expense ratio from 2015 to 2016, "
+            "in percentage points?"
+        ),
+        "reasoning": (
+            "Step 1: Calculate operating expense ratio for each year.\n"
+            "  - 2016 ratio = 720 / 3200 = 0.225 = 22.5%\n"
+            "  - 2015 ratio = 680 / 3000 = 0.2267 = 22.67%\n\n"
+            "Step 2: Calculate the change in percentage points.\n"
+            "  Change = 22.5 - 22.67 = -0.17 percentage points\n\n"
+            "The operating expense ratio decreased by 0.17 percentage points."
+        ),
+        "program": "subtract(divide(720, 3200), divide(680, 3000))",
+        "answer": "-0.17",
+    },
 ]
 
 
@@ -458,7 +688,6 @@ class ManualBaselinePipeline:
         for i, ex in enumerate(examples):
             # Pular exemplos já processados
             if ex.id in completed:
-                # Reconstruir PredictionResult do checkpoint
                 c = completed[ex.id]
                 result = PredictionResult(
                     example_id=c["example_id"],
@@ -477,7 +706,6 @@ class ManualBaselinePipeline:
                 report.predictions.append(result)
                 continue
 
-            # Processar exemplo novo
             try:
                 result = self.predict(ex)
             except Exception as e:
@@ -496,7 +724,6 @@ class ManualBaselinePipeline:
                 )
             report.predictions.append(result)
 
-            # Salvar no checkpoint
             completed[ex.id] = {
                 "example_id": result.example_id,
                 "question": result.question,
@@ -515,7 +742,6 @@ class ManualBaselinePipeline:
             with open(checkpoint_path, "w") as f:
                 json.dump(completed, f, ensure_ascii=False)
 
-            # Log de progresso
             if verbose and (i + 1) % 10 == 0:
                 done = len(report.predictions)
                 acc_so_far = (
@@ -528,7 +754,6 @@ class ManualBaselinePipeline:
                     f"LLM: {self.llm.status()}"
                 )
 
-        # Limpar checkpoint ao concluir com sucesso
         if Path(checkpoint_path).exists():
             Path(checkpoint_path).unlink()
             print("  ✓ Checkpoint removido (execução completa)")

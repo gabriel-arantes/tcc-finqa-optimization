@@ -72,8 +72,8 @@ def configure_dspy_lm(
 # ── Otimização ──────────────────────────────────────────────
 def optimize_bootstrap_few_shot(
     trainset: list[dspy.Example],
-    max_bootstrapped_demos: int = 10,
-    max_labeled_demos: int = 10,
+    max_bootstrapped_demos: int = 20,
+    max_labeled_demos: int = 20,
     max_rounds: int = 3,
 ) -> FinQAModule:
     """
@@ -98,8 +98,8 @@ def optimize_miprov2(
     trainset: list[dspy.Example],
     valset: Optional[list[dspy.Example]] = None,
     auto_level: str = "medium",
-    max_bootstrapped_demos: int = 10,
-    max_labeled_demos: int = 10,
+    max_bootstrapped_demos: int = 20,
+    max_labeled_demos: int = 20,
     seed: int = 42,
 ) -> FinQAModule:
     """
@@ -165,7 +165,7 @@ def optimize_gepa(
 
 def optimize_knn_few_shot(
     trainset: list[dspy.Example],
-    k: int = 10,
+    k: int = 20,
 ) -> FinQAModule:
     """
     Otimiza via KNNFewShot.
@@ -194,7 +194,7 @@ def optimize_simba(
     trainset: list[dspy.Example],
     max_steps: int = 8,
     num_candidates: int = 6,
-    max_demos: int = 8,
+    max_demos: int = 16,
     seed: int = 42,
 ) -> FinQAModule:
     """

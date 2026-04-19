@@ -43,7 +43,6 @@ def run_single_optimizer(
     print(f"Otimizador: {name}")
     print(f"{'='*60}")
 
-    # ── Otimização ──
     print(f"\n[1/3] Otimizando com {name}...")
     start = time.time()
 
@@ -86,14 +85,12 @@ def run_single_optimizer(
     optimization_time = time.time() - start
     print(f"  Otimização concluída em {optimization_time:.1f}s")
 
-    # ── Salvar módulo otimizado ──
     save_path = f"results/optimized_{name}_seed{args.seed}"
     try:
         save_optimized_module(optimized, save_path)
     except Exception as e:
         print(f"  ⚠ Não foi possível salvar módulo ({name}): {e}")
 
-    # ── Inspecionar prompt otimizado ──
     print(f"\n[2/3] Inspecionando prompt otimizado...")
     try:
         for pred_name, predictor in optimized.named_predictors():
@@ -110,7 +107,6 @@ def run_single_optimizer(
     except Exception as e:
         print(f"  Erro ao inspecionar: {e}")
 
-    # ── Avaliação ──
     print(f"\n[3/3] Avaliando {name} no split de avaliação...")
     report = evaluate_dspy_module(
         module=optimized,
@@ -160,9 +156,9 @@ def main():
     )
     parser.add_argument("--seed", type=int, default=42)
 
-    # Hiperparâmetros dos otimizadores — 10 demos para paridade com baseline
-    parser.add_argument("--max_bootstrapped_demos", type=int, default=10)
-    parser.add_argument("--max_labeled_demos", type=int, default=10)
+    # Hiperparâmetros dos otimizadores — 20 demos para paridade com baseline
+    parser.add_argument("--max_bootstrapped_demos", type=int, default=20)
+    parser.add_argument("--max_labeled_demos", type=int, default=20)
     parser.add_argument("--max_rounds", type=int, default=3)
     parser.add_argument(
         "--auto_level", type=str, default="medium",
@@ -172,7 +168,6 @@ def main():
 
     args = parser.parse_args()
 
-    # ── Configurar DSPy ──
     print("Configurando DSPy LM...")
     configure_dspy_lm(
         provider=args.provider,
@@ -181,24 +176,20 @@ def main():
         max_tokens=1024,
     )
 
-    # ── Carregar dados ──
     print("\nCarregando dataset FinQA...")
     train_raw = load_finqa("train", subset=args.train_subset, seed=args.seed)
     eval_raw = load_finqa(args.eval_split, subset=args.eval_subset, seed=args.seed)
     print(f"  Train: {len(train_raw)} exemplos")
     print(f"  Eval ({args.eval_split}): {len(eval_raw)} exemplos")
 
-    # Converter para formato DSPy
     train_dspy = finqa_to_dspy_examples(train_raw)
 
-    # Separar validação para MIPROv2/GEPA (últimos 20% do train)
     val_split = int(len(train_dspy) * 0.8)
     val_dspy = train_dspy[val_split:]
     train_dspy_opt = train_dspy[:val_split]
     print(f"  Train (otimização): {len(train_dspy_opt)} exemplos")
     print(f"  Validação: {len(val_dspy)} exemplos")
 
-    # ── Executar otimizadores ──
     optimizers_to_run = {
         "all": ["bootstrap_few_shot", "miprov2", "gepa", "knn_few_shot", "simba"],
         "bootstrap": ["bootstrap_few_shot"],
@@ -210,7 +201,6 @@ def main():
 
     reports = {}
     for opt_name in optimizers_to_run:
-        # KNNFewShot usa trainset completo (busca KNN em tempo de inferência)
         train_for_opt = train_dspy if opt_name == "knn_few_shot" else train_dspy_opt
         report = run_single_optimizer(
             name=opt_name,
@@ -221,7 +211,6 @@ def main():
         )
         reports[opt_name] = report
 
-    # ── Sumário comparativo ──
     print(f"\n{'='*60}")
     print("SUMÁRIO COMPARATIVO — Otimização Automática de Prompts")
     print(f"{'='*60}")

@@ -1,0 +1,12 @@
+{
+  "pipeline": "dspy_simba",
+  "split": "dev",
+  "n": 883,
+  "execution_accuracy": 72.82,
+  "program_accuracy": 0.0,
+  "total_tokens": 2497240,
+  "avg_input_tokens": 2566.9,
+  "avg_output_tokens": 261.2,
+  "avg_latency_s": 4.66,
+  "timestamp": "20260419_043744"
+}

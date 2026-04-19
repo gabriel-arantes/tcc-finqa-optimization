@@ -1,0 +1,36 @@
+{
+  "reason.predict": {
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "Answer a numerical reasoning question about financial data.\n\nGiven context from a financial report (text and/or tables) and a question,\nperform step-by-step numerical reasoning to compute the answer.\n\nExpress percentages as numbers with % sign (e.g., 56.25%).\nFor yes/no questions, answer 'yes' or 'no'.",
+      "fields": [
+        {
+          "prefix": "Context:",
+          "description": "Financial report context including text and tables"
+        },
+        {
+          "prefix": "Question:",
+          "description": "Question requiring numerical reasoning over the financial data"
+        },
+        {
+          "prefix": "Reasoning:",
+          "description": "Step-by-step numerical reasoning showing all calculations"
+        },
+        {
+          "prefix": "Answer:",
+          "description": "Final numerical answer (e.g., '6.9', '56.25%', 'yes')"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.13",
+      "dspy": "3.0.3",
+      "cloudpickle": "3.1"
+    }
+  }
+}

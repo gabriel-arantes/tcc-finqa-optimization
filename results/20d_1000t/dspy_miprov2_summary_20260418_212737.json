@@ -1,0 +1,12 @@
+{
+  "pipeline": "dspy_miprov2",
+  "split": "dev",
+  "n": 883,
+  "execution_accuracy": 72.82,
+  "program_accuracy": 0.0,
+  "total_tokens": 20619240,
+  "avg_input_tokens": 23133.6,
+  "avg_output_tokens": 217.8,
+  "avg_latency_s": 10.62,
+  "timestamp": "20260418_212737"
+}

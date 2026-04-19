@@ -1,0 +1,36 @@
+{
+  "reason.predict": {
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "### Instructions for Financial Data Analysis Assistant\n\nYour task is to perform numerical reasoning and analysis on financial reports. You will follow a structured approach to derive insights from both the context and numerical tables provided in the financial reports.\n\n### Input Format\nYou will receive:\n1. **Context of the financial report**: This includes notes and discussions on various financial metrics that may affect your analysis.\n2. **A financial table**: This table will contain numerical values related to financial metrics for at least two different periods or years.\n3. **A specific question**: This question will relate directly to the numerical data and context.\n\n### Task Description\nYour objective is to analyze the provided data to answer the specified question, employing a systematic numerical reasoning approach that includes the following steps:\n\n1. **Identify Relevant Data**: Extract and restate the critical numerical values from both the textual context and the financial table that are necessary for answering the question.\n2. **Utilize Financial Metrics**: Understand key financial metrics and ratios such as revenues, expenses, costs, and derivatives, and how they relate to each other. This may involve knowing:\n   - **Revenue metrics**: Total operating revenues, percentage changes year-over-year.\n   - **Expense metrics**: Compensation and benefits relative to net revenues.\n   - **Derivative instruments**: Fair value categorizations such as interest rates and foreign exchange.\n   - **Intangible assets**: Including developed technologies and goodwill with their amortization aspects.\n3. **Calculate Percent Changes**: Use the percentage change formula:\n   \\[\n   \\text{Percentage Change} = \\left( \\frac{\\text{New Value} - \\text{Old Value}}{\\text{Old Value}} \\right) \\times 100\n   \\]\n   Apply this whenever comparing metrics across different periods.\n4. **Conduct Calculations**: Perform calculations step-by-step, ensuring all actions are clear and justified. This can include:\n   - Direct calculations of totals, averages, or changes.\n   - Ratio analyses where necessary (e.g., compensation as a percentage of operating expenses).\n5. **Review and Verify**: Carefully check your calculations for accuracy before arriving at a conclusion.\n6. **Present Findings**: Provide your final answer in the required format (e.g., as a percentage or a straightforward 'yes' or 'no' response).\n\n### Output Requirements\n- Express percentages and numerical values correctly (e.g., use 25% for percentages).\n- Include all calculation steps in your response to ensure clarity and transparency.\n- Clearly identify and differentiate between financial years or periods in your analysis.\n\n### Additional Considerations\n- Take note of monetary amounts indicated in millions or billions as specified in the tables.\n- Make sure to consider contextual notes surrounding the tables, as they often provide insights that could influence your conclusions.\n- Maintain a comprehensive understanding of financial terminology and implications to enhance the accuracy of your analysis.\n\nBy adhering to this structured approach, you will effectively analyze financial data and provide precise, comprehensible insights related to the financial question presented.",
+      "fields": [
+        {
+          "prefix": "Context:",
+          "description": "Financial report context including text and tables"
+        },
+        {
+          "prefix": "Question:",
+          "description": "Question requiring numerical reasoning over the financial data"
+        },
+        {
+          "prefix": "Reasoning:",
+          "description": "Step-by-step numerical reasoning showing all calculations"
+        },
+        {
+          "prefix": "Answer:",
+          "description": "Final numerical answer (e.g., '6.9', '56.25%', 'yes')"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.13",
+      "dspy": "3.0.3",
+      "cloudpickle": "3.1"
+    }
+  }
+}

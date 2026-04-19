@@ -1,0 +1,44 @@
+{
+  "reason.predict": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "context": "### Relevant Text (Before Table)\n\nnotes to consolidated financial statements 2014 ( continued ) ( amounts in millions , except per share amounts ) sales of businesses and investments 2013 primarily includes realized gains and losses relating to the sales of businesses , cumulative translation adjustment balances from the liquidation of entities and sales of marketable securities and investments in publicly traded and privately held companies in our rabbi trusts .\nduring 2009 , we realized a gain of $ 15.2 related to the sale of an investment in our rabbi trusts , which was partially offset by losses realized from the sale of various businesses .\nlosses in 2007 primarily related to the sale of several businesses within draftfcb for a loss of $ 9.3 and charges at lowe of $ 7.8 as a result of the realization of cumulative translation adjustment balances from the liquidation of several businesses .\nvendor discounts and credit adjustments 2013 we are in the process of settling our liabilities related to vendor discounts and credits established during the restatement we presented in our 2004 annual report on form 10-k .\nthese adjustments reflect the reversal of certain of these liabilities as a result of settlements with clients or vendors or where the statute of limitations has lapsed .\nlitigation settlement 2013 during may 2008 , the sec concluded its investigation that began in 2002 into our financial reporting practices , resulting in a settlement charge of $ 12.0 .\ninvestment impairments 2013 in 2007 we realized an other-than-temporary charge of $ 5.8 relating to a $ 12.5 investment in auction rate securities , representing our total investment in auction rate securities .\nsee note 12 for further information .\nnote 5 : intangible assets goodwill goodwill is the excess purchase price remaining from an acquisition after an allocation of purchase price has been made to identifiable assets acquired and liabilities assumed based on estimated fair values .\nthe changes in the carrying value of goodwill for our segments , integrated agency networks ( 201cian 201d ) and constituency management group ( 201ccmg 201d ) , for the years ended december 31 , 2009 and 2008 are listed below. .\n\n\n### Financial Table\n\n                                                        | ian              | cmg            | total 1         \n--------------------------------------------------------------------------------------------------------------\nbalance as of december 31 2007                          | $ 2789.7         | $ 441.9        | $ 3231.6        \ncurrent year acquisitions                               | 99.5             | 1.8            | 101.3           \ncontingent and deferred payments for prior acquisitions | 28.9             | 1.1            | 30.0            \nother ( primarily foreign currency translation )        | -128.1 ( 128.1 ) | -13.9 ( 13.9 ) | -142.0 ( 142.0 )\nbalance as of december 31 2008                          | $ 2790.0         | $ 430.9        | $ 3220.9        \ncurrent year acquisitions2                              | 5.2              | 2014           | 5.2             \ncontingent and deferred payments for prior acquisitions | 14.2             | 2014           | 14.2            \nother ( primarily foreign currency translation )        | 76.2             | 4.5            | 80.7            \nbalance as of december 31 2009                          | $ 2885.6         | $ 435.4        | $ 3321.0        \n\n\n### Relevant Text (After Table)\n\n1 for all periods presented we have not recorded a goodwill impairment charge .\n2 for acquisitions completed after january 1 , 2009 , amount includes contingent and deferred payments , which are recorded at fair value on the acquisition date .\nsee note 6 for further information .\nsee note 1 for further information regarding our annual impairment methodology .\nother intangible assets included in other intangible assets are assets with indefinite lives not subject to amortization and assets with definite lives subject to amortization .\nother intangible assets primarily include customer lists and trade names .\nintangible assets with definitive lives subject to amortization are amortized on a straight-line basis with estimated useful lives generally between 7 and 15 years .\namortization expense for other intangible assets for the years ended december 31 , 2009 , 2008 and 2007 was $ 19.3 , $ 14.4 and $ 8.5 , respectively .\nthe following table provides a summary of other intangible assets , which are included in other assets on our consolidated balance sheets. .",
+        "question": "what was the percentage decrease from 2007 for 2009 for the cmg balance?",
+        "reasoning": "To calculate the percentage decrease in the CMG (Constituency Management Group) balance from 2007 to 2009, we need to use the following formula for percentage decrease:\n\n\\[\n\\text{Percentage Decrease} = \\left( \\frac{\\text{Old Value} - \\text{New Value}}{\\text{Old Value}} \\right) \\times 100\n\\]\n\n1. Identify the values from the table:\n   - CMG balance as of December 31, 2007: $441.9 million\n   - CMG balance as of December 31, 2009: $435.4 million\n\n2. Now, calculate the difference between the old and new values:\n   \\[\n   \\text{Difference} = 441.9 - 435.4 = 6.5 \\text{ million}\n   \\]\n\n3. Substitute these values into the percentage decrease formula:\n   \\[\n   \\text{Percentage Decrease} = \\left( \\frac{6.5}{441.9} \\right) \\times 100\n   \\]\n\n4. Now perform the calculation:\n   \\[\n   \\text{Percentage Decrease} = \\left( 0.0147 \\right) \\times 100 \\approx 1.47\\%\n   \\]\n\nThus, the percentage decrease in the CMG balance from 2007 to 2009 is approximately 1.47%.",
+        "answer": "1.47%"
+      }
+    ],
+    "signature": {
+      "instructions": "Answer a numerical reasoning question about financial data.\n\nGiven context from a financial report (text and/or tables) and a question,\nperform step-by-step numerical reasoning to compute the answer.\n\nExpress percentages as numbers with % sign (e.g., 56.25%).\nFor yes/no questions, answer 'yes' or 'no'.\n\nIf the module receives a context that includes financial figures and a question about percentage changes, it should double-check its arithmetic calculations, especially when computing percentages. Ensure that the formula used for percent increase is applied correctly: Percent Increase = (Increase / Original Amount) * 100. Pay close attention to rounding and significant figures to avoid minor discrepancies in the final answer.",
+      "fields": [
+        {
+          "prefix": "Context:",
+          "description": "Financial report context including text and tables"
+        },
+        {
+          "prefix": "Question:",
+          "description": "Question requiring numerical reasoning over the financial data"
+        },
+        {
+          "prefix": "Reasoning:",
+          "description": "Step-by-step numerical reasoning showing all calculations"
+        },
+        {
+          "prefix": "Answer:",
+          "description": "Final numerical answer (e.g., '6.9', '56.25%', 'yes')"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.13",
+      "dspy": "3.0.3",
+      "cloudpickle": "3.1"
+    }
+  }
+}

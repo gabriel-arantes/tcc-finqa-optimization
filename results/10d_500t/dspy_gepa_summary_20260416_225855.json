@@ -1,0 +1,12 @@
+{
+  "pipeline": "dspy_gepa",
+  "split": "dev",
+  "n": 883,
+  "execution_accuracy": 72.59,
+  "program_accuracy": 0.0,
+  "total_tokens": 1817270,
+  "avg_input_tokens": 1786.1,
+  "avg_output_tokens": 271.9,
+  "avg_latency_s": 4.9,
+  "timestamp": "20260416_225855"
+}
