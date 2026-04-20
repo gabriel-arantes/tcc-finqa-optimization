@@ -25,7 +25,7 @@ tcc_finqa/
 │   ├── llm_client.py         # Cliente LLM com tracking de tokens
 │   ├── baseline_manual.py    # Pipeline baseline (few-shot CoT)
 │   ├── dspy_module.py        # Módulo DSPy (assinatura + metric)
-│   ├── dspy_pipelines.py     # Otimizadores: Bootstrap, MIPROv2, GEPA
+│   ├── dspy_pipelines.py     # Otimizadores: Bootstrap, MIPROv2, GEPA, KNNFewShot, SIMBA
 │   └── results_collector.py  # Persistência e exportação
 ├── results/                  # Resultados gerados (gitignored)
 ├── requirements.txt
@@ -41,6 +41,8 @@ tcc_finqa/
 | `dspy_bootstrap_few_shot` | Otimização automática | Seleção de demos via rejection sampling |
 | `dspy_miprov2` | Otimização automática | Otimização conjunta instrução+demos via busca bayesiana |
 | `dspy_gepa` | Otimização automática | Evolução genética com reflexão em linguagem natural |
+| `dspy_knn_few_shot` | Otimização automática | Seleção dinâmica de demos por similaridade (KNN) por exemplo |
+| `dspy_simba` | Otimização automática | Otimização introspectiva via auto-reflexão sobre erros (SIMBA) |
 
 ## Setup
 
@@ -75,6 +77,46 @@ python scripts/run_all.py --eval_split test --num_runs 3
 python scripts/run_all.py --skip gepa miprov2
 ```
 
+## Resultados
+
+Todos os experimentos usam `gpt-4o-mini` (temperature=0) e avaliam no **dev set completo** (n=883).
+As pastas de resultados seguem o padrão `{demos}d_{train}t` — número de demos por otimizador × tamanho do trainset.
+
+### Run 1 — 5 demos / 300 exemplos de treino
+
+| Pipeline | Exec Acc (%) | Latência média (s) |
+|----------|:------------:|:-------------------:|
+| `manual_baseline` | 73.05 | 3.53 |
+| `dspy_bootstrap_few_shot` | 71.80 | 5.68 |
+| `dspy_miprov2` | 71.23 | 4.59 |
+| `dspy_gepa` | 73.73 | 5.45 |
+| `dspy_knn_few_shot` | 71.91 | 58.61 |
+| `dspy_simba` | 73.50 | 5.03 |
+
+### Run 2 — 10 demos / 500 exemplos de treino
+
+| Pipeline | Exec Acc (%) | Avg tokens | Latência média (s) |
+|----------|:------------:|:----------:|:-------------------:|
+| `manual_baseline` | 70.55 | 2 960 | 3.12 |
+| `dspy_bootstrap_few_shot` | 72.82 | 13 747 | 4.29 |
+| `dspy_miprov2` | 71.35 | 12 998 | 5.24 |
+| `dspy_gepa` | 72.59 | 2 058 | 4.90 |
+| `dspy_knn_few_shot` | 73.05 | 52 657 | 55.08 |
+| `dspy_simba` | **74.52** | 2 570 | 5.53 |
+
+### Run 3 — 20 demos / 1 000 exemplos de treino
+
+| Pipeline | Exec Acc (%) | Avg tokens | Latência média (s) |
+|----------|:------------:|:----------:|:-------------------:|
+| `manual_baseline` | 66.36 | 4 550 | 3.52 |
+| `dspy_bootstrap_few_shot` | 73.16 | 24 194 | 4.73 |
+| `dspy_miprov2` | 72.82 | 23 351 | 10.62 |
+| `dspy_gepa` | **73.61** | 1 815 | 4.78 |
+| `dspy_knn_few_shot` | 70.89 | 83 762 | 91.47 |
+| `dspy_simba` | 72.82 | 2 828 | 4.66 |
+
+> **Observação:** Na Run 1 o tracking de tokens ainda não estava implementado, por isso os valores não aparecem.
+
 ## Métricas
 
 - **Execution accuracy** (primária): compara resultado numérico com `exe_ans` do FinQA
@@ -93,4 +135,4 @@ python scripts/run_all.py --skip gepa miprov2
 
 - **engenharia de prompts manual** → baseline
 - **otimização automática de prompts** → abordagem DSPy
-- **otimizadores** → BootstrapFewShot, MIPROv2, GEPA
+- **otimizadores** → BootstrapFewShot, MIPROv2, GEPA, KNNFewShot, SIMBA
